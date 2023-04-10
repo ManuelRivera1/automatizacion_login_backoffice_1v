@@ -1,5 +1,6 @@
 #Autor:johana.giraldo@konexinnovation.com.co
 
+  @HULOGIN
   Feature: verificar el login con diferentes usuarios
     Yo como usuario
   Quiero ingresar a la pagina color
@@ -20,3 +21,18 @@
       | 10101013    | CDATACENTER10 |
 
 
+@Caso2
+  Scenario Outline: Verificar el ingreso con credenciales incorrectas
+  Given que el usuario ingrese al Backoffice
+  When digita usuario o contrasenna incorrectas
+    | usuario   | contrasenna   |
+    | <usuario> | <contrasenna> |
+  Then verifica el mensaje de error
+
+  Examples:
+    | usuario     | contrasenna   |
+    | 10974074491 | ADATACENTER10 |
+    | 10101022    | CLAVE         |
+    | USER        | CLAVEERRADA   |
+
+  

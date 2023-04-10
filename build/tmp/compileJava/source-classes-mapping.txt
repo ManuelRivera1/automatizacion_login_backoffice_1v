@@ -4,11 +4,17 @@ co/com/konex/cetificacion/login/backoffice/tasks/Ingresar.java
  co.com.konex.cetificacion.login.backoffice.tasks.Ingresar
 co/com/konex/cetificacion/login/backoffice/userinterfaces/ContenedorDeObjetos.java
  co.com.konex.cetificacion.login.backoffice.userinterfaces.ContenedorDeObjetos
+co/com/konex/cetificacion/login/backoffice/userinterfaces/ContenedordeElementos.java
+ co.com.konex.cetificacion.login.backoffice.userinterfaces.ContenedordeElementos
 co/com/konex/cetificacion/login/backoffice/Main.java
  co.com.konex.cetificacion.login.backoffice.Main
+co/com/konex/cetificacion/login/backoffice/tasks/Digitar.java
+ co.com.konex.cetificacion.login.backoffice.tasks.Digitar
 co/com/konex/cetificacion/login/backoffice/questions/Verificar.java
  co.com.konex.cetificacion.login.backoffice.questions.Verificar
 co/com/konex/cetificacion/login/backoffice/tasks/Abrir.java
  co.com.konex.cetificacion.login.backoffice.tasks.Abrir
+co/com/konex/cetificacion/login/backoffice/questions/Validar.java
+ co.com.konex.cetificacion.login.backoffice.questions.Validar
 co/com/konex/cetificacion/login/backoffice/userinterfaces/PaginaBackoffice.java
  co.com.konex.cetificacion.login.backoffice.userinterfaces.PaginaBackoffice

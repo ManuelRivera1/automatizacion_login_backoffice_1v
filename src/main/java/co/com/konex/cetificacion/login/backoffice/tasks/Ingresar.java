@@ -26,8 +26,10 @@ public class Ingresar implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Enter.theValue(tablaUsuarios.getUsuario()).into(ContenedorDeObjetos.USER),
                 Enter.theValue(tablaUsuarios.getContrasenna()).into(ContenedorDeObjetos.PASSWORD),
+                Click.on(ContenedorDeObjetos.BTN_VER_CONTRASENNA),
                 Click.on(ContenedorDeObjetos.BTN_SING_IN),
                 Click.on(ContenedorDeObjetos.OPTION_EMPRESA),
                 Click.on(ContenedorDeObjetos.BTN_ACEPT));
+
     }
 }
