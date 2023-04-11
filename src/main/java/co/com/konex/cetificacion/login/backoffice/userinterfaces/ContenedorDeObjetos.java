@@ -12,4 +12,5 @@ public class ContenedorDeObjetos {
     public static final Target OPTION_EMPRESA = Target.the("Opcion empresa").located(By.xpath("//tr[@class='ng-star-inserted']"));
     public static final Target BTN_ACEPT = Target.the("Boton Aceptar").located(By.xpath("//button[@class = 'w-120-px btn-aceptar2']"));
     public static final Target HOME_VALIDATION = Target.the("Verificar ingreso").located(By.xpath("//span[contains(text(),'Inicio')]"));
+    public static final Target MENSAJE_ERROR = Target.the("Mensaje error credenciales").located(By.xpath("//p[contains(text(),'Credenciales incorrectas. Inténtalo de nuevo.')]"));
 }
