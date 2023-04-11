@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="4bde0503c4f3538aba17b72a3a6ceb382e4020759d5d9ef25cc4b0fa667bac82.html">Verificar El Login Con Diferentes Usuarios</a></span>
+                > <span class="truncate-60"><a
+                    href="b31018e1b4af94450e72fc6908942b347bcacb20217adf170efa6d738d1b0a6c.html">Verificar el ingreso con credenciales incorrectas </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 11-04-2023 18:01</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Verificar El Login Con Diferentes Usuarios </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como usuario<br />
+Quiero ingresar a la pagina color<br />
+Para verificar el inicio de sesion con diferentes usuarios
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6319f96b0c522edb5a2fe0a4d6dbddf2b766e759fea45aa392002a7bee206dc7.html">HULOGIN
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="8465f1f005e096d388fce3e7cb5684102baf77cc7413cbb303e7d6166301e2f8.html">Caso2
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Verificar el ingreso con credenciales incorrectas
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given que el usuario ingrese al Backoffice<br>When digita usuario o contrasenna incorrectas<br><table class='embedded'><thead><th>usuario</th><th>contrasenna</th></thead><tbody><tr><td>&lt;usuario&gt;</td><td>&lt;contrasenna&gt;</td></tr></tbody></table><br>Then verifica el mensaje de error</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="2906e0e514c90d11ffaf03067b12110de544ee879fa76ed63b517fad1e2e3380.png" title=" 1: Verificar el ingreso con credenciales incorrectas ({usuario=10974074491, contrasenna=ADATACENTER10})" width="1366"/>
+                <img src="2906e0e514c90d11ffaf03067b12110de544ee879fa76ed63b517fad1e2e3380.png" title=" Given que el usuario ingrese al Backoffice" width="1366"/>
+                <img src="2906e0e514c90d11ffaf03067b12110de544ee879fa76ed63b517fad1e2e3380.png" title=" Usuario abrir" width="1366"/>
+                <img src="2906e0e514c90d11ffaf03067b12110de544ee879fa76ed63b517fad1e2e3380.png" title=" Usuario opens the Pagina backoffice" width="1366"/>
+                <img src="2906e0e514c90d11ffaf03067b12110de544ee879fa76ed63b517fad1e2e3380.png" title=" Usuario abrir (completed)" width="1366"/>
+                <img src="827eba772fc8c0a7b9dfb33684fbbfab2dbf1f790c8339d229e180e243a6dda7.png" title=" Given que el usuario ingrese al Backoffice (completed)" width="1366"/>
+                <img src="827eba772fc8c0a7b9dfb33684fbbfab2dbf1f790c8339d229e180e243a6dda7.png" title=" When digita usuario o contrasenna incorrectas
+| usuario | contrasenna |
+| 10974074491 | ADATACENTER10 |" width="1366"/>
+                <img src="2906e0e514c90d11ffaf03067b12110de544ee879fa76ed63b517fad1e2e3380.png" title=" Usuario digitar" width="1366"/>
+                <img src="2906e0e514c90d11ffaf03067b12110de544ee879fa76ed63b517fad1e2e3380.png" title=" Usuario enters '10974074491' into Datos para campo de usuario" width="1366"/>
+                <img src="006b24e5412277c5de3e2de51cd21d98827689b6fa88dab4e7de0ed1afc6cbb1.png" title=" Usuario enters '10974074491' into Datos para campo de usuario" width="1366"/>
+                <img src="593c02f2b79ab573dd722198271769da9d69a7badc725eaf18bb77823c363d3f.png" title=" Usuario enters '10974074491' into Datos para campo de usuario (completed)" width="1366"/>
+                <img src="593c02f2b79ab573dd722198271769da9d69a7badc725eaf18bb77823c363d3f.png" title=" Usuario enters 'ADATACENTER10' into Datos para campo contrasenna" width="1366"/>
+                <img src="8f3b4680d4bc987a2e7421df2b03819e3633c37d3a313f1528eec2b60bbcf637.png" title=" Usuario enters 'ADATACENTER10' into Datos para campo contrasenna" width="1366"/>
+                <img src="57f13a3b963fce0199c55083d3851bc181233f1870f6572733782e3a7a672bad.png" title=" Usuario enters 'ADATACENTER10' into Datos para campo contrasenna (completed)" width="1366"/>
+                <img src="57f13a3b963fce0199c55083d3851bc181233f1870f6572733782e3a7a672bad.png" title=" Usuario clicks on Boton iniciar sesion" width="1366"/>
+                <img src="a79dae21a3891fe468fc882b77cbe237708f0f835a2ba1e61557c11c8c710bd4.png" title=" Usuario clicks on Boton iniciar sesion" width="1366"/>
+                <img src="a79dae21a3891fe468fc882b77cbe237708f0f835a2ba1e61557c11c8c710bd4.png" title=" Usuario clicks on Boton iniciar sesion (completed)" width="1366"/>
+                <img src="a2b8b453e4007eef976f41d527b9fc1a376edcfa01b1f5bd49b7f3fd55f01003.png" title=" Usuario digitar (completed)" width="1366"/>
+                <img src="be2a37469233a3a39bfdfc5546492067574fd59a77365059884495b26f0b1565.png" title=" When digita usuario o contrasenna incorrectas
+| usuario | contrasenna |
+| 10974074491 | ADATACENTER10 | (completed)" width="1366"/>
+                <img src="be2a37469233a3a39bfdfc5546492067574fd59a77365059884495b26f0b1565.png" title=" Then verifica el mensaje de error" width="1366"/>
+                <img src="be2a37469233a3a39bfdfc5546492067574fd59a77365059884495b26f0b1565.png" title=" Then validar should be 'Credenciales incorrectas. Int&amp;eacute;ntalo de nuevo.'" width="1366"/>
+                <img src="be2a37469233a3a39bfdfc5546492067574fd59a77365059884495b26f0b1565.png" title=" Then validar should be 'Credenciales incorrectas. Int&amp;eacute;ntalo de nuevo.' (completed)" width="1366"/>
+                <img src="be2a37469233a3a39bfdfc5546492067574fd59a77365059884495b26f0b1565.png" title=" Then verifica el mensaje de error (completed)" width="1366"/>
+                <img src="be2a37469233a3a39bfdfc5546492067574fd59a77365059884495b26f0b1565.png" title=" 1: Verificar el ingreso con credenciales incorrectas ({usuario=10974074491, contrasenna=ADATACENTER10}) (completed)" width="1366"/>
+                <img src="827eba772fc8c0a7b9dfb33684fbbfab2dbf1f790c8339d229e180e243a6dda7.png" title=" 2: Verificar el ingreso con credenciales incorrectas ({usuario=10101022, contrasenna=CLAVE})" width="1366"/>
+                <img src="827eba772fc8c0a7b9dfb33684fbbfab2dbf1f790c8339d229e180e243a6dda7.png" title=" Given que el usuario ingrese al Backoffice" width="1366"/>
+                <img src="827eba772fc8c0a7b9dfb33684fbbfab2dbf1f790c8339d229e180e243a6dda7.png" title=" Usuario abrir" width="1366"/>
+                <img src="827eba772fc8c0a7b9dfb33684fbbfab2dbf1f790c8339d229e180e243a6dda7.png" title=" Usuario opens the Pagina backoffice" width="1366"/>
+                <img src="827eba772fc8c0a7b9dfb33684fbbfab2dbf1f790c8339d229e180e243a6dda7.png" title=" Usuario abrir (completed)" width="1366"/>
+                <img src="2906e0e514c90d11ffaf03067b12110de544ee879fa76ed63b517fad1e2e3380.png" title=" Given que el usuario ingrese al Backoffice (completed)" width="1366"/>
+                <img src="2906e0e514c90d11ffaf03067b12110de544ee879fa76ed63b517fad1e2e3380.png" title=" When digita usuario o contrasenna incorrectas
+| usuario | contrasenna |
+| 10101022 | CLAVE |" width="1366"/>
+                <img src="827eba772fc8c0a7b9dfb33684fbbfab2dbf1f790c8339d229e180e243a6dda7.png" title=" Usuario digitar" width="1366"/>
+                <img src="2906e0e514c90d11ffaf03067b12110de544ee879fa76ed63b517fad1e2e3380.png" title=" Usuario enters '10101022' into Datos para campo de usuario" width="1366"/>
+                <img src="b0a5d6a1f734387fed02f51cb75c1efb8fc88bf9d7f62f4f541c1765bc1e9d6e.png" title=" Usuario enters '10101022' into Datos para campo de usuario" width="1366"/>
+                <img src="b0a5d6a1f734387fed02f51cb75c1efb8fc88bf9d7f62f4f541c1765bc1e9d6e.png" title=" Usuario enters '10101022' into Datos para campo de usuario (completed)" width="1366"/>
+                <img src="620d6ee4ed74bd9ca39ca6d24c23bcc7f0392780e41df55aaecea016e0b0face.png" title=" Usuario enters 'CLAVE' into Datos para campo contrasenna" width="1366"/>
+                <img src="29ba0d226d74ba75769fb1c95aeda6bcea365293ae93d3c7134160352b8436ee.png" title=" Usuario enters 'CLAVE' into Datos para campo contrasenna" width="1366"/>
+                <img src="66d216a08114877bb5f80593c8d0b9e77b363f6764f1d635fe15c35ab790323e.png" title=" Usuario enters 'CLAVE' into Datos para campo contrasenna (completed)" width="1366"/>
+                <img src="29ba0d226d74ba75769fb1c95aeda6bcea365293ae93d3c7134160352b8436ee.png" title=" Usuario clicks on Boton iniciar sesion" width="1366"/>
+                <img src="cec435b2f86c7114c00d4ff1cbe23bc074aa575a798cb199521f9f4e8a6563a0.png" title=" Usuario clicks on Boton iniciar sesion" width="1366"/>
+                <img src="619cfb64e8ad3e5958a146732dd88166baa4df938deff27c143a3a930985d02e.png" title=" Usuario clicks on Boton iniciar sesion (completed)" width="1366"/>
+                <img src="8138b9de91a47d0be6cfdb468a6d10cc5df446459729225dcad0ec6b7f65d3ff.png" title=" Usuario digitar (completed)" width="1366"/>
+                <img src="cf2776dd75e4df8a3e08ad689d9b336d2c1b98db90f62eb3085e6749becc0308.png" title=" When digita usuario o contrasenna incorrectas
+| usuario | contrasenna |
+| 10101022 | CLAVE | (completed)" width="1366"/>
+                <img src="cf2776dd75e4df8a3e08ad689d9b336d2c1b98db90f62eb3085e6749becc0308.png" title=" Then verifica el mensaje de error" width="1366"/>
+                <img src="524292d9b0a2c641e80856de2314e5e47ea468398735302e60abc480391e83e3.png" title=" Then validar should be 'Credenciales incorrectas. Int&amp;eacute;ntalo de nuevo.'" width="1366"/>
+                <img src="524292d9b0a2c641e80856de2314e5e47ea468398735302e60abc480391e83e3.png" title=" Then validar should be 'Credenciales incorrectas. Int&amp;eacute;ntalo de nuevo.' (completed)" width="1366"/>
+                <img src="524292d9b0a2c641e80856de2314e5e47ea468398735302e60abc480391e83e3.png" title=" Then verifica el mensaje de error (completed)" width="1366"/>
+                <img src="524292d9b0a2c641e80856de2314e5e47ea468398735302e60abc480391e83e3.png" title=" 2: Verificar el ingreso con credenciales incorrectas ({usuario=10101022, contrasenna=CLAVE}) (completed)" width="1366"/>
+                <img src="2906e0e514c90d11ffaf03067b12110de544ee879fa76ed63b517fad1e2e3380.png" title=" 3: Verificar el ingreso con credenciales incorrectas ({usuario=USER, contrasenna=CLAVEERRADA})" width="1366"/>
+                <img src="2906e0e514c90d11ffaf03067b12110de544ee879fa76ed63b517fad1e2e3380.png" title=" Given que el usuario ingrese al Backoffice" width="1366"/>
+                <img src="2906e0e514c90d11ffaf03067b12110de544ee879fa76ed63b517fad1e2e3380.png" title=" Usuario abrir" width="1366"/>
+                <img src="2906e0e514c90d11ffaf03067b12110de544ee879fa76ed63b517fad1e2e3380.png" title=" Usuario opens the Pagina backoffice" width="1366"/>
+                <img src="2906e0e514c90d11ffaf03067b12110de544ee879fa76ed63b517fad1e2e3380.png" title=" Usuario abrir (completed)" width="1366"/>
+                <img src="827eba772fc8c0a7b9dfb33684fbbfab2dbf1f790c8339d229e180e243a6dda7.png" title=" Given que el usuario ingrese al Backoffice (completed)" width="1366"/>
+                <img src="827eba772fc8c0a7b9dfb33684fbbfab2dbf1f790c8339d229e180e243a6dda7.png" title=" When digita usuario o contrasenna incorrectas
+| usuario | contrasenna |
+| USER | CLAVEERRADA |" width="1366"/>
+                <img src="2906e0e514c90d11ffaf03067b12110de544ee879fa76ed63b517fad1e2e3380.png" title=" Usuario digitar" width="1366"/>
+                <img src="827eba772fc8c0a7b9dfb33684fbbfab2dbf1f790c8339d229e180e243a6dda7.png" title=" Usuario enters 'USER' into Datos para campo de usuario" width="1366"/>
+                <img src="6ee518bde31ed9748cbc1bf75e25759204ba5cc7e95cddb292a2cb469132bd94.png" title=" Usuario enters 'USER' into Datos para campo de usuario" width="1366"/>
+                <img src="99f853fc455550c4b3f1007f0b36ec61ba43767a91f657eabe3476d44d0c0263.png" title=" Usuario enters 'USER' into Datos para campo de usuario (completed)" width="1366"/>
+                <img src="99f853fc455550c4b3f1007f0b36ec61ba43767a91f657eabe3476d44d0c0263.png" title=" Usuario enters 'CLAVEERRADA' into Datos para campo contrasenna" width="1366"/>
+                <img src="5c635cea890abb491677e61cc50c8b9ad7e72d57ca385d3871f7b6b598d708d8.png" title=" Usuario enters 'CLAVEERRADA' into Datos para campo contrasenna" width="1366"/>
+                <img src="f887815663c507490ed12eac6d2b936ce9003d565405c1e18155fce5971141b5.png" title=" Usuario enters 'CLAVEERRADA' into Datos para campo contrasenna (completed)" width="1366"/>
+                <img src="f887815663c507490ed12eac6d2b936ce9003d565405c1e18155fce5971141b5.png" title=" Usuario clicks on Boton iniciar sesion" width="1366"/>
+                <img src="8296927bd9cae128078c2697fb79a999d4aef8079a72ab11f0371d896d2836a3.png" title=" Usuario clicks on Boton iniciar sesion" width="1366"/>
+                <img src="8296927bd9cae128078c2697fb79a999d4aef8079a72ab11f0371d896d2836a3.png" title=" Usuario clicks on Boton iniciar sesion (completed)" width="1366"/>
+                <img src="dddbd0e8a8576723356d4ec761797971776c516e2adad5e19c52df231176cf87.png" title=" Usuario digitar (completed)" width="1366"/>
+                <img src="dddbd0e8a8576723356d4ec761797971776c516e2adad5e19c52df231176cf87.png" title=" When digita usuario o contrasenna incorrectas
+| usuario | contrasenna |
+| USER | CLAVEERRADA | (completed)" width="1366"/>
+                <img src="dcdf3ab0929e8ae1dfd07869a2f06a28c53a23cf63ec0b12ab3c4b18a5daa583.png" title=" Then verifica el mensaje de error" width="1366"/>
+                <img src="dcdf3ab0929e8ae1dfd07869a2f06a28c53a23cf63ec0b12ab3c4b18a5daa583.png" title=" Then validar should be 'Credenciales incorrectas. Int&amp;eacute;ntalo de nuevo.'" width="1366"/>
+                <img src="dcdf3ab0929e8ae1dfd07869a2f06a28c53a23cf63ec0b12ab3c4b18a5daa583.png" title=" Then validar should be 'Credenciales incorrectas. Int&amp;eacute;ntalo de nuevo.' (completed)" width="1366"/>
+                <img src="dcdf3ab0929e8ae1dfd07869a2f06a28c53a23cf63ec0b12ab3c4b18a5daa583.png" title=" Then verifica el mensaje de error (completed)" width="1366"/>
+                <img src="dcdf3ab0929e8ae1dfd07869a2f06a28c53a23cf63ec0b12ab3c4b18a5daa583.png" title=" 3: Verificar el ingreso con credenciales incorrectas ({usuario=USER, contrasenna=CLAVEERRADA}) (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.2.0</span>
+</div>
+</body>
+</html>

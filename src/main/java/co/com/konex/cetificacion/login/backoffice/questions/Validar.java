@@ -13,6 +13,6 @@ public class Validar implements Question {
 
     @Override
     public Object answeredBy(Actor actor) {
-        return Text.of(ContenedorDeObjetos.MENSAJE_ERROR).viewedBy(actor).asString();
+        return Text.of(ContenedorDeObjetos.MENSAJE_ERROR).answeredBy(actor);
     }
 }

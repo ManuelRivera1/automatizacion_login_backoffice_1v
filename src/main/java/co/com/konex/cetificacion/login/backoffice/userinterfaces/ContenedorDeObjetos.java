@@ -1,6 +1,5 @@
 package co.com.konex.cetificacion.login.backoffice.userinterfaces;
 
-import org.apache.tools.ant.taskdefs.Tar;
 import org.openqa.selenium.By;
 import net.serenitybdd.screenplay.targets.Target;
 

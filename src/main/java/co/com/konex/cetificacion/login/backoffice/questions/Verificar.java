@@ -12,6 +12,6 @@ public class Verificar implements Question {
 
     @Override
     public Object answeredBy(Actor actor) {
-        return Text.of(ContenedorDeObjetos.HOME_VALIDATION).viewedBy(actor).asString();
+        return Text.of(ContenedorDeObjetos.HOME_VALIDATION).answeredBy(actor);
     }
 }

@@ -6,18 +6,25 @@ import co.com.konex.cetificacion.login.backoffice.questions.Verificar;
 import co.com.konex.cetificacion.login.backoffice.tasks.Abrir;
 import co.com.konex.cetificacion.login.backoffice.tasks.Digitar;
 import co.com.konex.cetificacion.login.backoffice.tasks.Ingresar;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.Before;
+import io.cucumber.java.DataTableType;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import org.hamcrest.Matchers;
 
 import java.util.List;
+import java.util.Map;
 
 public class MyStepdefinitions {
+
+    @DataTableType
+    public TablaUsuarios tablaUsuariosEntry(Map<String, String> entry){
+        return new TablaUsuarios(entry.get("usuario"), entry.get("contrasenna"));
+    }
 
     @Before
     public void iniciarEscenario(){
