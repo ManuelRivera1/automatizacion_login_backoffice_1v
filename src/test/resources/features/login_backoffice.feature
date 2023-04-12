@@ -7,6 +7,18 @@
   Para verificar el inicio de sesion con diferentes usuarios
 
   @Caso1
+   Scenario Outline: Verificar el ingreso corrrecto con un usuario
+    Given que el usario ingresa al Backoffice
+    When digita usuario y contrasenna del usuario
+      | usuario   | contrasenna   |
+      | <usuario> | <contrasenna> |
+    Then verifica el ingreso correcto
+
+    Examples:
+      | usuario     | contrasenna |
+      | 10974074491 | JGIRALDO10  |
+
+    @Caso2
   Scenario Outline: Verificar el ingreso correcto con diferentes usuarios
     Given que el usuario ingresa al Backoffice
     When digita usuario y contrasenna
@@ -21,7 +33,7 @@
       | 10101013    | CDATACENTER10 |
 
 
-@Caso2
+@Caso3
   Scenario Outline: Verificar el ingreso con credenciales incorrectas
   Given que el usuario ingrese al Backoffice
   When digita usuario o contrasenna incorrectas

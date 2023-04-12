@@ -30,6 +30,25 @@ public class MyStepdefinitions {
     public void iniciarEscenario(){
         OnStage.setTheStage(new OnlineCast());
     }
+
+    //Caso 1
+    @Given("que el usario ingresa al Backoffice")
+    public void queElUsarioIngresaAlBackoffice() {
+        OnStage.theActorCalled("Usuario").wasAbleTo(Abrir.laPagina());
+    }
+
+    @When("digita usuario y contrasenna del usuario")
+    public void digitaUsuarioYContrasennaDelUsuario(List<TablaUsuarios> tablaUsuarios) {
+        OnStage.theActorInTheSpotlight().attemptsTo(Ingresar.credenciales(tablaUsuarios.get(0)));
+    }
+
+    @Then("verifica el ingreso correcto")
+    public void verificaElIngresoCorrecto() {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Verificar.home(), Matchers.equalTo("Inicio")));
+
+    }
+
+    //caso2
     @Given("^que el usuario ingresa al Backoffice$")
     public void queElUsuarioIngresaAlBackoffice() {
         OnStage.theActorCalled("Usuario").wasAbleTo(Abrir.laPagina());
@@ -46,7 +65,7 @@ public class MyStepdefinitions {
 
     }
 
-    //Caso2
+    //Caso3
     @Given("^que el usuario ingrese al Backoffice$")
     public void queElUsuarioIngreseAlBackoffice() {
             OnStage.theActorCalled("Usuario").wasAbleTo(Abrir.laPagina());
@@ -62,4 +81,5 @@ public class MyStepdefinitions {
     public void verificaElMensajeDeError() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Validar.mensajeError(),Matchers.equalTo("Credenciales incorrectas. Inténtalo de nuevo.")));
     }
+
 }
