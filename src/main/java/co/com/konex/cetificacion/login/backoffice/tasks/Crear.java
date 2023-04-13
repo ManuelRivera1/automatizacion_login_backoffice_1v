@@ -37,7 +37,10 @@ public class Crear implements Task {
                 Enter.theValue(tablaCrearSorteo.getNumerosorteo()).into(ContenedordeObjetosSorteo.NUM_SORTEO),
                 Enter.theValue(tablaCrearSorteo.getNumeroincrementaldelsorteo()).into(ContenedordeObjetosSorteo.NUM_INCRE_SORTEO),
                 Click.on(ContenedordeObjetosSorteo.BTN_SGTE),
-                Click.on(ContenedordeObjetosSorteo.CHECK_APLICAR_TODOS));
-                //Enter.theValue(tablaCrearSorteo.getHorasorteo()).into(ContenedordeObjetosSorteo.HORA_SORTEO));
+                Click.on(ContenedordeObjetosSorteo.CHECK_APLICAR_TODOS),
+                Enter.theValue(tablaCrearSorteo.getHorasorteo()).into(ContenedordeObjetosSorteo.HORA_SORTEO),
+                Scroll.to(ContenedordeObjetosSorteo.BTN_SGTE_STEP_DOS),
+                Click.on(ContenedordeObjetosSorteo.BTN_SGTE_STEP_DOS),
+                Click.on(ContenedordeObjetosSorteo.BTN_ENV_SOLICITUD));
     }
 }

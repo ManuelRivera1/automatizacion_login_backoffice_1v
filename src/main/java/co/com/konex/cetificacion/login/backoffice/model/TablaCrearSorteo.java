@@ -5,6 +5,13 @@ public class TablaCrearSorteo {
     private String numerosorteo;
     private String numeroincrementaldelsorteo;
 
+    private String horasorteo;
+
+    public TablaCrearSorteo(String numerosorteo, String numeroincrementaldelsorteo,String horasorteo) {
+        this.numerosorteo = numerosorteo;
+        this.numeroincrementaldelsorteo = numeroincrementaldelsorteo;
+        this.horasorteo = horasorteo;
+    }
     public String getHorasorteo() {
         return horasorteo;
     }
@@ -12,15 +19,7 @@ public class TablaCrearSorteo {
     public void setHorasorteo(String horasorteo) {
         this.horasorteo = horasorteo;
     }
-
-    private String horasorteo;
-
-    public TablaCrearSorteo(String numerosorteo, String numeroincrementaldelsorteo,String horasorteo) {
-        this.numerosorteo = numerosorteo;
-        this.numeroincrementaldelsorteo = numeroincrementaldelsorteo;
-    }
-
-    public String getNumerosorteo() {
+       public String getNumerosorteo() {
         return numerosorteo;
     }
 

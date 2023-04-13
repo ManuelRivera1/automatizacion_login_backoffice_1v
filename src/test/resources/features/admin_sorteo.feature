@@ -15,5 +15,5 @@
       And ingrese al modulo Escrutinio y submodulo sorteo
       And cree un sorteo
         | numerosorteo | numeroincrementaldelsorteo | horasorteo |
-        | 001          | 1                          | 100000     |
+        | 001          | 1                          | 100000p    |
       Then validara que el sorteo se haya creado

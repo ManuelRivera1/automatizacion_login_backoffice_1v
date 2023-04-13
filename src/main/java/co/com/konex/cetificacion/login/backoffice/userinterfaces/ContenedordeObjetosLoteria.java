@@ -11,7 +11,7 @@ public class ContenedordeObjetosLoteria {
     public static final Target NOMBRE_LARGO = Target.the("campo nombre largo").located(By.id("largo"));
     public static final Target NOMBRE_CORTO = Target.the("campo nombre corto").located(By.id("corto"));
     public static final Target TELEFONO = Target.the("campo telefono loteria").located(By.id("telefono"));
-    public static final Target CHECK_PRODUCTO = Target.the("check producto chance").located(By.xpath("(//label[@class='custom-control-label'])[1]"));
+    public static final Target CHECK_PRODUCTO = Target.the("check producto chance").locatedBy("//label[contains(text(),'SUPER ASTRO')]");
     public static final Target IMAG_LOTERIA = Target.the("Imagen de la loteria").located(By.xpath("(//div[@class='row ng-star-inserted'])[13]"));
 
     public static final Target ESTADO_LOTERIA = Target.the("estado de la loteria").located(By.xpath("//div[@class='ui-chkbox-box ui-widget ui-corner-all ui-state-default']"));

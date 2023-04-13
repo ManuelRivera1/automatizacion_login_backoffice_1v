@@ -25,5 +25,7 @@ public class ContenedordeObjetosSorteo {
     public static final Target NUM_INCRE_SORTEO = Target.the("campo numero incremental sorteo").located(By.xpath("//input[@inputid='incremental']"));
     public static final Target BTN_SGTE = Target.the("botón siguiente").located(By.xpath("//label[contains(text(),'Siguiente ')]"));
     public static final Target CHECK_APLICAR_TODOS = Target.the("check aplicar a todos los días").located(By.xpath("(//div[@class='ui-chkbox-box ui-widget ui-corner-all ui-state-default'])[1]"));
-    //public static final Target HORA_SORTEO = Target.the("hora sorteo").located(By.xpath("//input[@class='input-app-sm ml-2']"));
+    public static final Target HORA_SORTEO = Target.the("hora sorteo").located(By.xpath("//input[@class='input-app-sm ml-2']"));
+    public static final Target BTN_SGTE_STEP_DOS = Target.the("boton siguiente step dos de crear sorteo").locatedBy("(//label[contains(text(),'Siguiente')])[2]");
+    public static final Target BTN_ENV_SOLICITUD = Target.the("Boton enviar solicitud").locatedBy("//label[contains(text(),'Enviar Solicitud')]");
 }

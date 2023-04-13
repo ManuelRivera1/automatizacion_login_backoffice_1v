@@ -13,8 +13,8 @@
         | 10974074491 | JGIRALDO10 |
       And ingrese al modulo Escrutinio y submodulo loteria
       And cree una loteria
-        | codigo | nombrelargo   | nombrecorto | telefono   |
-        | 01     | Prueba Johana | Prueba JAG  | 3146212518 |
+        | codigo | nombrelargo   | nombrecorto | telefono   | producto |
+        | 01     | Prueba Johana | Prueba JAG  | 3146212518 | CHANCE   |
     Then validara que la loteria se haya creado
 
 

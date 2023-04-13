@@ -6,6 +6,7 @@ public class TablaLoterias {
     private String nombrelargo;
     private String nombrecorto;
     private String telefono;
+    private String producto;
 
     public TablaLoterias(String codigo, String nombrelargo, String nombrecorto, String telefono) {
         this.codigo = codigo;
@@ -13,7 +14,6 @@ public class TablaLoterias {
         this.nombrecorto = nombrecorto;
         this.telefono = telefono;
     }
-
     public String getCodigo() {
         return codigo;
     }
