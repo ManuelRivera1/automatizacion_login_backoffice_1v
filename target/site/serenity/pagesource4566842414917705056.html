@@ -1,0 +1,620 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en"&gt;<br/>
+ &lt;head&gt; <br/>
+  &lt;meta charset="utf-8"&gt; <br/>
+  &lt;title&gt;FrontAdmin&lt;/title&gt; <br/>
+  &lt;base href="/"&gt; <br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt; <br/>
+  &lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt; <br/>
+  &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"&gt; <br/>
+  &lt;link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;display=swap" rel="stylesheet"&gt; <br/>
+  &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt; <br/>
+  &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt; <br/>
+  &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""&gt; <br/>
+  &lt;link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet"&gt; <br/>
+  &lt;link rel="stylesheet" href="styles.de7b3bd8613dc75b2393.css"&gt;<br/>
+  &lt;style&gt;.tootlbar-icon[_ngcontent-tdl-c11]{padding:0 14px}.tootlbar-spacer[_ngcontent-tdl-c11]{flex:1 1 auto}.loading[_ngcontent-tdl-c11]{z-index:9999;height:2em;width:2em;overflow:show;margin:auto;bottom:0;right:0}.loading[_ngcontent-tdl-c11], .loading[_ngcontent-tdl-c11]:before{position:fixed;top:0;left:0}.loading[_ngcontent-tdl-c11]:before{content:"";display:block;width:100%;height:100%;background-color:rgba(0,0,0,.3)}.loading[_ngcontent-tdl-c11]:not(:required){font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.loading[_ngcontent-tdl-c11]:not(:required):after{content:"";display:block;font-size:10px;width:1em;height:1em;margin-top:-.5em;-webkit-animation:spinner 1.5s linear infinite;animation:spinner 1.5s linear infinite;border-radius:.5em;box-shadow:1.5em 0 0 0 rgba(0,0,0,.75),1.1em 1.1em 0 0 rgba(0,0,0,.75),0 1.5em 0 0 rgba(0,0,0,.75),-1.1em 1.1em 0 0 rgba(0,0,0,.75),-1.5em 0 0 0 rgba(0,0,0,.75),-1.1em -1.1em 0 0 rgba(0,0,0,.75),0 -1.5em 0 0 rgba(0,0,0,.75),1.1em -1.1em 0 0 rgba(0,0,0,.75)}@-webkit-keyframes spinner{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes spinner{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}&lt;/style&gt;<br/>
+  &lt;script charset="utf-8" src="1-es2015.77894f2691b9eb4ebab9.js"&gt;&lt;/script&gt;<br/>
+  &lt;script charset="utf-8" src="11-es2015.0fc88818024c85f64ded.js"&gt;&lt;/script&gt;<br/>
+  &lt;style&gt;.pnl-1[_ngcontent-tdl-c62]{height:100%;min-height:100vh;display:flex;justify-content:center;align-items:center;background-image:url(/assets/login/2752811.png);background-repeat:no-repeat;background-size:cover;background-position:50%;background-attachment:fixed}.pnl-1[_ngcontent-tdl-c62]:before{content:"";width:100%;min-height:100vh;position:fixed;background:transparent linear-gradient(305deg,#b10d0d,#e90505) 0 0 no-repeat padding-box;opacity:.73}.pnl-2[_ngcontent-tdl-c62]{width:80%;height:560px;border-radius:25px;box-shadow:0 0 11px 0 rgba(0,0,0,.16);background-color:#fff;z-index:1}@media(min-width:768px){.pnl-2[_ngcontent-tdl-c62]{width:370px}.container[_ngcontent-tdl-c62]{padding-left:35px!important;padding-right:35px!important;margin-top:1rem!important}}.img-login[_ngcontent-tdl-c62]{text-align:center;padding-top:10%}.logo-login[_ngcontent-tdl-c62]{width:220px;height:220px;-o-object-fit:contain;object-fit:contain}.container[_ngcontent-tdl-c62]{padding-left:10px;padding-right:10px;margin-top:1rem}.subtitle[_ngcontent-tdl-c62]{font-family:var(--font-family-1)!important;color:#616161;font-weight:700}.inner-addon[_ngcontent-tdl-c62]{position:relative}.aico-eye[_ngcontent-tdl-c62], .inner-addon[_ngcontent-tdl-c62]   .aico[_ngcontent-tdl-c62]{position:absolute}.aico-eye[_ngcontent-tdl-c62], .left-addon[_ngcontent-tdl-c62]   .aico[_ngcontent-tdl-c62]{left:91%;padding-top:8px}.left-addon[_ngcontent-tdl-c62]   input[_ngcontent-tdl-c62]{padding-right:30px}.aico[_ngcontent-tdl-c62], .aico-eye[_ngcontent-tdl-c62]{color:#999;z-index:1}.aico-eye[_ngcontent-tdl-c62]{cursor:pointer}.aico-eye[_ngcontent-tdl-c62]:hover{color:#0083fe}.requerido[_ngcontent-tdl-c62]{box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(169,68,66,.6)}.footer[_ngcontent-tdl-c62]{position:absolute;z-index:1;left:0;bottom:0;width:100%;text-align:center;padding-left:20px;font-size:15px;font-stretch:normal;font-style:normal;line-height:1.3;letter-spacing:normal;color:#f1f1f1}.footer[_ngcontent-tdl-c62], .li[_ngcontent-tdl-c62]{font-family:var(--font-family-1)!important}.li[_ngcontent-tdl-c62]{font-size:14px;color:#0083fe;cursor:pointer}.li[_ngcontent-tdl-c62]:hover{color:#124a7e}.input2[_ngcontent-tdl-c62]{border-radius:6px;background-color:#f4f8fb;padding:7px 15px;border:0;outline:medium none;font-family:var(--font-family-1)!important}[_ngcontent-tdl-c62]::-moz-placeholder{color:#999;font-size:15px}[_ngcontent-tdl-c62]::placeholder{color:#999;font-size:15px}.user-icon[_ngcontent-tdl-c62]{color:#fff;font-size:20px}.btn-less[_ngcontent-tdl-c62]{box-shadow:0 3.5px 4px 0 rgba(167,187,190,.45);border-radius:15px;background-color:#6c757d;color:#f1f1f1;padding:.3rem .8rem;border:0;outline:0!important}.btn-less[_ngcontent-tdl-c62]:hover{background-color:#50585f}.btn-light[_ngcontent-tdl-c62]{box-shadow:0 1.5px 4px 0 rgba(20,157,183,.45)!important;border-radius:15px;background-color:#2076bd!important;color:#f1f1f1;padding:.3rem .8rem;border:0;outline:0!important}.btn-light[_ngcontent-tdl-c62]:hover{background-color:#2684d1!important}.puntero[_ngcontent-tdl-c62]{cursor:pointer}.title-pl[_ngcontent-tdl-c62]{font:normal normal normal 16px/18px Open Sans,sans-serif;color:#333}.lbltitle[_ngcontent-tdl-c62]{color:#333;font-size:15px;font-family:Open Sans,sans-serif!important}.btn-icon[_ngcontent-tdl-c62], .btn-label[_ngcontent-tdl-c62]{color:#f1f1f1}.btn-label[_ngcontent-tdl-c62]{font:normal normal normal 15px/17px Open Sans,sans-serif;margin:0!important;cursor:pointer}.tbl-row[_ngcontent-tdl-c62]{font:normal normal normal 14px/16px Open Sans,sans-serif;color:#333;font-weight:700}.tbl-row[_ngcontent-tdl-c62]:hover{background-color:#f0f1f3;cursor:pointer}.row-selected[_ngcontent-tdl-c62]{padding-top:4px!important;padding-left:4px;display:inline-block}.icon-selected[_ngcontent-tdl-c62]{padding-bottom:4px!important;font-size:20px;color:#23ad44}.my-custom-scrollbar[_ngcontent-tdl-c62]{position:relative;max-height:167px;overflow:auto}.ui-dialog-titlebar-notifi[_ngcontent-tdl-c62]{background-color:#fff!important}.table-wrapper-scroll-y[_ngcontent-tdl-c62]{display:block}.link-recuperar-pass[_ngcontent-tdl-c62]{color:var(--color-3)}[_nghost-tdl-c62]     .mat-form-field-flex{padding:0!important;border-radius:6px!important}[_nghost-tdl-c62]     .mat-form-field-wrapper{padding-bottom:0!important}[_nghost-tdl-c62]     .mat-form-field-label-wrapper{top:-.60375em!important}[_nghost-tdl-c62]     .mat-form-field-appearance-fill .mat-form-field-infix{padding:7px 5px!important}.mat-form-field-type-mat-native-select.mat-form-field-disabled[_ngcontent-tdl-c62]   .mat-form-field-infix[_ngcontent-tdl-c62]:after, [_nghost-tdl-c62]     .mat-input-element:disabled{color:#333!important}[_nghost-tdl-c62]     .mat-form-field-appearance-fill.mat-form-field-disabled .mat-form-field-flex{background-color:rgba(133,172,205,.09019607843137255)!important}[_nghost-tdl-c62]     .mat-form-field-infix{width:38vh!important}.btn-cancelar2[_ngcontent-tdl-c62]{background-color:var(--color-13)!important;font-size:var(--font-size-menu)!important;text-align:left!important;color:var(--color-18)!important;border:none!important;outline:none!important}.btn-aceptar2[_ngcontent-tdl-c62], .btn-cancelar2[_ngcontent-tdl-c62]{font-weight:700!important;text-transform:uppercase!important}.btn-aceptar2[_ngcontent-tdl-c62]{border-radius:25px!important;box-shadow:0 3px 8px var(--color-border-transparent)!important;font-size:var(--font-size-lg)!important;width:30%!important;color:var(--color-13)!important;border-color:hsla(0,0%,100%,0)}&lt;/style&gt;<br/>
+  &lt;script charset="utf-8" src="7-es2015.6a257dfebf1199abb3a9.js"&gt;&lt;/script&gt;<br/>
+  &lt;script charset="utf-8" src="2-es2015.5271dd0b53f0facd1873.js"&gt;&lt;/script&gt;<br/>
+  &lt;script charset="utf-8" src="10-es2015.e63ee720e9ce18d921d5.js"&gt;&lt;/script&gt;<br/>
+  &lt;script charset="utf-8" src="9-es2015.223c4076b3a8b79a6f7c.js"&gt;&lt;/script&gt;<br/>
+  &lt;style&gt;[_nghost-tdl-c118]{display:flex;flex-direction:column;position:absolute;top:0;bottom:0;left:0;right:0}.btn-no[_ngcontent-tdl-c118]{box-shadow:0 3.5px 4px 0 rgba(167,187,190,.45)!important;border-radius:15px!important;background-color:#6c757d!important;color:#f1f1f1!important;border:0!important;outline:0!important;width:80px!important;cursor:pointer!important}.btn-no[_ngcontent-tdl-c118]:hover{background-color:#50585f!important}.btn-si[_ngcontent-tdl-c118]{box-shadow:0 3.5px 4px 0 #1e37b7!important;border-radius:15px!important;background-color:#1e37b7!important;color:#f1f1f1!important;border:0!important;outline:0!important;width:80px!important;cursor:pointer!important}.btn-si[_ngcontent-tdl-c118]:hover{background-image:linear-gradient(0deg,#37cae4,#409cf1)!important}.btn-app[_ngcontent-tdl-c118]{box-shadow:0 1.5px 4px 0 rgba(20,157,183,.45);border-radius:15px;background-image:linear-gradient(0deg,#0bc9ec,#0083fe);color:#f1f1f1;border:0}[_nghost-tdl-c118]     #confApp .ui-dialog-content{text-align:center!important;height:6em}[_nghost-tdl-c118]     #confApp .ui-dialog-titlebar{background-color:#1e37b7!important;color:#fff!important}[_nghost-tdl-c118]     #confApp .ui-dialog-footer{background-color:#f2f2f2!important;border:0!important;text-align:right!important;border-bottom-right-radius:10px;border-bottom-left-radius:10px}[_nghost-tdl-c118]     #confApp .ui-dialog-titlebar-icon{color:#fff!important}[_nghost-tdl-c118]     #confApp .ui-confirmdialog-icon{color:#6b6969!important}[_nghost-tdl-c118]     #confApp .ui-confirmdialog{width:40em}[_nghost-tdl-c118]     .ui-toast .ui-toast-message.ui-toast-message-success{background-color:#23ad44!important;color:#fff!important;border-radius:10px!important}[_nghost-tdl-c118]     .ui-toast .ui-toast-message.ui-toast-message-success .ui-toast-close-icon{color:#fff!important}[_nghost-tdl-c118]     .ui-toast .ui-toast-message.ui-toast-message-error{background-color:#cc1515!important;color:#fff!important;border-radius:10px!important}[_nghost-tdl-c118]     .ui-toast .ui-toast-message.ui-toast-message-error .ui-toast-close-icon{color:#fff!important}[_nghost-tdl-c118]     #toastExtraLong .ui-toast-message{width:650px!important;left:-90px}[_nghost-tdl-c118]     #toastLonger .ui-toast-message{width:500px!important;left:-90px}[_nghost-tdl-c118]     #toastMedium .ui-toast-message{width:350px!important;left:0}&lt;/style&gt;<br/>
+  &lt;style&gt;[_nghost-tdl-c114]{display:flex;background-color:#f4f4f4;flex-grow:1}.body-style[_ngcontent-tdl-c114]{flex-grow:1;overflow:auto!important}.contenido[_ngcontent-tdl-c114]{padding:10px}[_nghost-tdl-c114]     #smallMenu .ui-sidebar-left{width:242px!important}[_nghost-tdl-c114]     #smallMenu .ui-sidebar{padding:0!important}&lt;/style&gt;<br/>
+  &lt;style&gt;[_nghost-tdl-c125]{display:flex;align-items:flex-end;justify-content:flex-end;flex-grow:1;position:relative}.content-menu[_nghost-tdl-c125]{display:inline-block;width:246px;min-width:241px;flex-grow:0;background-color:var(--color-1);border-bottom:0!important;min-height:100vh;height:100%;font-family:var(--font-family-1)!important;color:var(--color-13);position:fixed;z-index:1000;overflow-y:auto}.content-menu[_nghost-tdl-c125]::-webkit-scrollbar-track{background-color:#0062ff}.item[_ngcontent-tdl-c125]{text-align:left;padding:10px;cursor:pointer;font-size:16px}.item[_ngcontent-tdl-c125]:hover, .sub-menu[_ngcontent-tdl-c125]:hover, .submenu[_ngcontent-tdl-c125]   a[_ngcontent-tdl-c125]:hover{background-color:var(--color-3)}.item-icon[_ngcontent-tdl-c125]{font-size:20px;margin-right:5px}.barra[_ngcontent-tdl-c125]{border-bottom:1px solid var(--color-13)!important}.accordion[_ngcontent-tdl-c125]{padding-left:0;width:100%}.accordion[_ngcontent-tdl-c125]   li[_ngcontent-tdl-c125]   i[_ngcontent-tdl-c125]{transition:all .4s ease}.accordion[_ngcontent-tdl-c125]   li[_ngcontent-tdl-c125]   i.fa-chevron-down[_ngcontent-tdl-c125]{right:.5rem;left:auto;position:absolute;top:1rem;font-size:14px}.accordion[_ngcontent-tdl-c125]   .menu[_ngcontent-tdl-c125]{text-align:left;padding:10px;cursor:pointer;font-size:16px;transition:all .4s ease;position:relative}.accordion[_ngcontent-tdl-c125]   .menu[_ngcontent-tdl-c125]:hover{background-color:var(--color-3);padding-left:20px}.rotate[_ngcontent-tdl-c125]{transform:rotate(180deg)}.submenu[_ngcontent-tdl-c125]{overflow:hidden;font-size:14px;transition:height .4s ease;padding-left:0}.submenu[_ngcontent-tdl-c125]   a[_ngcontent-tdl-c125]{display:block;text-decoration:none;transition:all .25s ease-in-out;padding:10px 10px 10px 37px;font-size:14.5px;cursor:pointer}.accordion[_ngcontent-tdl-c125]   .sub-menu[_ngcontent-tdl-c125]{font-size:15.5px;padding:10px 10px 10px 37px}.accordion[_ngcontent-tdl-c125]   .sub-menu[_ngcontent-tdl-c125], .accordion[_ngcontent-tdl-c125]   .sub-menu-hijo[_ngcontent-tdl-c125]{text-align:left;cursor:pointer;transition:all .4s ease;position:relative}.accordion[_ngcontent-tdl-c125]   .sub-menu-hijo[_ngcontent-tdl-c125]{font-size:14.5px;padding:10px 10px 10px 50px}.active-link[_ngcontent-tdl-c125]{background-color:var(--color-3);cursor:auto!important;pointer-events:none}.item-bottom[_ngcontent-tdl-c125]{border-bottom:1px solid var(--color-13)}.st-item[_ngcontent-tdl-c125]{color:#fff}.st-sub-item[_ngcontent-tdl-c125]{margin-left:15px;color:#fff}.item-route[_ngcontent-tdl-c125]{overflow:hidden;padding-left:0;width:100%}.sub-icon[_ngcontent-tdl-c125]{margin-right:5px}.sub-icon[_ngcontent-tdl-c125], .sub-icon-wm[_ngcontent-tdl-c125]{font-size:12px;color:#fff}.sub-icon-wm[_ngcontent-tdl-c125]{margin-right:2px}.sub-icon-wm2[_ngcontent-tdl-c125]{font-size:12px;color:#fff}.logo[_ngcontent-tdl-c125]{height:70px;padding-top:10px}.logo-container[_ngcontent-tdl-c125]{margin:0 auto;width:100px;background:#fff;height:100px;border-radius:50px;display:flex;justify-content:center}.title-menu[_ngcontent-tdl-c125]{font-size:22px;font-weight:600;font-family:var(--font-family-1);letter-spacing:2px;margin-top:3px}.st-sub-item-hijo[_ngcontent-tdl-c125]{margin-left:15px;color:#fff;padding-left:10px}&lt;/style&gt;<br/>
+  &lt;style&gt;[_nghost-tdl-c124]{display:block}.header[_ngcontent-tdl-c124]{flex-grow:1;display:flex;background-color:var(--color-3);position:fixed;z-index:900;width:100%;box-shadow:0 4px 8px 0 rgba(0,0,0,.18)}.hambu[_ngcontent-tdl-c124]{width:64px;text-align:center;font-size:24px;cursor:pointer;padding-top:19px;height:100%}.hambu[_ngcontent-tdl-c124]:hover, .pad[_ngcontent-tdl-c124]:hover{background-color:var(--color-1)}.pad[_ngcontent-tdl-c124]{text-align:center;cursor:pointer;line-height:55px}.back[_ngcontent-tdl-c124]{height:30px;width:30px;color:#fff}.rotation[_ngcontent-tdl-c124]{transform:rotate(180deg) translateY(0);-webkit-transform:rotate(180deg) translateY(0);-ms-transform:rotate(180deg) translateY(0)}[_nghost-tdl-c124]     #menuUserSettings .ui-menu{background-color:var(--color-1);color:#eaeaea;width:18em}[_nghost-tdl-c124]     #menuUserSettings .ui-menuitem-text{font:normal normal normal 15px/16px var(--font-family-1);color:#eaeaea;font-size:14px}[_nghost-tdl-c124]     #menuUserSettings .ui-menuitem-icon{color:#eaeaea}[_nghost-tdl-c124]     #menuUserSettings .ui-menu .ui-menuitem-link{text-align:left;outline:none!important;outline-width:0!important;box-shadow:none!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important}[_nghost-tdl-c124]     #menuUserSettings .ui-menu .ui-menuitem-link:hover{background-color:var(--color-2)}.div-empresas[_ngcontent-tdl-c124]{padding-top:19px!important;text-align:right}[_nghost-tdl-c124]     .ui-dropdown{background:var(--color-1)!important}[_nghost-tdl-c124]     .dropdown-empresas{box-shadow:none;border-color:#fff!important;padding-left:30px}[_nghost-tdl-c124]     .dropdown-empresas .ui-dropdown-trigger{background-color:var(--color-1)!important;color:#fff}[_nghost-tdl-c124]     .dropdown-empresas .ui-placeholder{font-family:var(--font-family-1)!important;font-size:15px!important;color:#fff!important}[_nghost-tdl-c124]     .dropdown-empresas .ui-dropdown-label{background-color:var(--color-1);font-family:var(--font-family-1)!important;padding-top:5px;padding-bottom:5px;padding-right:15px;color:#fff}.icon-building[_ngcontent-tdl-c124]{top:0;color:#fff;font-size:20px;z-index:2000}.inner-addon[_ngcontent-tdl-c124]{position:relative}.inner-addon[_ngcontent-tdl-c124]   .aico[_ngcontent-tdl-c124]{position:absolute}.left-addon[_ngcontent-tdl-c124]   .aico[_ngcontent-tdl-c124]{left:21%;padding-top:6px}.left-addon[_ngcontent-tdl-c124]   input[_ngcontent-tdl-c124]{padding-right:30px}&lt;/style&gt;<br/>
+  &lt;style&gt;.miga-pan[_ngcontent-tdl-c126]{padding:.79rem 1rem!important;margin-bottom:0;background-color:#fff;border-bottom:1px solid #d0d0d0!important;border-radius:0!important;margin-top:70px}.miga-modulo[_ngcontent-tdl-c126]{font-size:17px;margin-right:3px}.miga-modulo[_ngcontent-tdl-c126], .miga-url[_ngcontent-tdl-c126]{font-family:var(--font-family-1)!important;color:var(--color-6);font-weight:700}.miga-url[_ngcontent-tdl-c126]{font-size:15.5px}.icon[_ngcontent-tdl-c126]{color:var(--color-1);font-size:20px;margin-right:5px}.iconHelp[_ngcontent-tdl-c126]{color:#0037fe;font-size:20px;margin-left:5px;cursor:pointer}.iconHelp[_ngcontent-tdl-c126]:hover{color:#3e88c5!important;transform:scale(1.1)}.barra[_ngcontent-tdl-c126]{border-bottom:1px solid #2076bd}.manual-title[_ngcontent-tdl-c126]{text-align:left;font:normal normal 600 15px Open Sans,sans-serif;letter-spacing:0;color:#111;opacity:1}.btn-label[_ngcontent-tdl-c126]{cursor:pointer;color:#fff;font-size:16px;margin-bottom:0!important}.btn-video[_ngcontent-tdl-c126]{background-color:#2076bd;box-shadow:0 3px 8px rgba(20,157,183,.45098039215686275);font-family:Open Sans,sans-serif;font-weight:500;font-stretch:normal;font-style:normal;line-height:1.27;letter-spacing:normal;text-align:left;color:#fff;text-align:center!important}.btn-video[_ngcontent-tdl-c126]:hover{background-color:#3e88c5!important}.sin-borde[_ngcontent-tdl-c126]{padding:0!important;margin:0!important;border:0!important}.btn-close[_ngcontent-tdl-c126]{color:#2076bd;cursor:pointer}.btn-close[_ngcontent-tdl-c126]:hover{color:#3e88c5!important;transform:scale(1.1)}.layout[_ngcontent-tdl-c126]{position:fixed;padding:0;top:0;right:0;display:block;width:550px;z-index:1101;height:100%;transition:transform .4s cubic-bezier(.05,.74,.2,.99);transform:translate(100%);-webkit-backface-visibility:hidden;backface-visibility:hidden}.configLayout[_ngcontent-tdl-c126]{position:relative;height:100%;box-shadow:0 2px 10px rgba(0,0,0,.23921568627450981)}.iconConfig[_ngcontent-tdl-c126]{display:block;position:absolute;width:23px;height:23px;line-height:23px;text-align:center;background-color:#2076bd;color:#fff;top:330px;left:-21px;z-index:-1;overflow:hidden;cursor:pointer;outline:0 none;border-radius:3px;box-shadow:0 5px 5px -3p}.iconConfig[_ngcontent-tdl-c126]:hover{background-color:#3e88c5!important;transform:scale(1.1)}.iconHelpFloat[_ngcontent-tdl-c126]{font-size:18px;line-height:inherit;cursor:pointer}&lt;/style&gt;<br/>
+  &lt;style&gt;.title[_ngcontent-tdl-c113]{color:var(--color-6);font-weight:800;font-size:26px;padding-left:23px}.rect[_ngcontent-tdl-c113]{background:#fff 0 0 no-repeat padding-box;border-radius:42px;opacity:1;width:203px;height:203px;margin-left:auto;margin-right:auto;cursor:pointer;margin-bottom:20px}.rect-large[_ngcontent-tdl-c113]:hover, .rect[_ngcontent-tdl-c113]:hover, .sub-rect-large[_ngcontent-tdl-c113]:hover{box-shadow:0 0 5px rgba(20,157,183,.47843137254901963)}.rect-large[_ngcontent-tdl-c113]{width:419px}.rect-large[_ngcontent-tdl-c113], .sub-rect-large[_ngcontent-tdl-c113]{background:#fff 0 0 no-repeat padding-box;border-radius:42px;opacity:1;height:203px;margin-left:auto;margin-right:auto;cursor:pointer}.sub-rect-large[_ngcontent-tdl-c113]{width:465px}.text[_ngcontent-tdl-c113]{font:normal normal normal 18px/19px Open Sans,sans-serif;letter-spacing:0;opacity:1;margin:0}.card-panel-header__title-dash[_ngcontent-tdl-c113]{font:normal normal 700 26px/39px Poppins;color:var(--color-6)}.plus[_ngcontent-tdl-c113]{color:var(--color-6);font-size:30px;padding-right:20px;display:inline}.text-large[_ngcontent-tdl-c113]{text-align:left;font:normal normal normal 22px/27px Open Sans,sans-serif;letter-spacing:0;color:#2076bd;opacity:1}.img-large[_ngcontent-tdl-c113]{padding-top:30px;padding-left:60px}.aso-mrg[_ngcontent-tdl-c113]{margin-top:85px}.sub-aso-mrg[_ngcontent-tdl-c113]{margin-top:45px}.sub-img-large[_ngcontent-tdl-c113]{padding-top:30px;padding-left:20px}.item-icon[_ngcontent-tdl-c113]{padding-top:25px;color:var(--color-1)!important}.modulo-label[_ngcontent-tdl-c113]{padding-bottom:15px}&lt;/style&gt;<br/>
+  &lt;style&gt;.inner-addon[_ngcontent-tdl-c130]{position:relative}.inner-addon[_ngcontent-tdl-c130]   .aico[_ngcontent-tdl-c130]{position:absolute}.left-addon[_ngcontent-tdl-c130]   .aico[_ngcontent-tdl-c130]{left:91%;padding-top:6px}.left-addon[_ngcontent-tdl-c130]   input[_ngcontent-tdl-c130]{padding-right:30px}.aico[_ngcontent-tdl-c130]{z-index:1}[_nghost-tdl-c130]     .mat-step-header[aria-selected=true]{background-color:#fff!important}.bg-clrg[_ngcontent-tdl-c130]{background-color:#e3e5e7!important}.i-slight[_ngcontent-tdl-c130]{color:#808991!important}.wth-sha[_ngcontent-tdl-c130]{box-shadow:none!important}[_nghost-tdl-c130]     .mat-horizontal-content-container{overflow:visible}[_nghost-tdl-c130]     .mat-horizontal-stepper-header{pointer-events:none!important}[_nghost-tdl-c130]     .ui-table .ui-table-tbody&gt;tr&gt;td{padding:.371em .857em}.pnl1[_ngcontent-tdl-c130]{border-radius:10px;background-color:#fff}.head[_ngcontent-tdl-c130], .sub-head[_ngcontent-tdl-c130]{border-top-left-radius:10px;border-top-right-radius:10px;height:40px;background-color:#f6f8f8;padding:10px;font-weight:700}.sub-head[_ngcontent-tdl-c130]{border-bottom:1px solid#c8c8c8}.title[_ngcontent-tdl-c130]{color:#999;font-size:16px}.sub-title[_ngcontent-tdl-c130], .title[_ngcontent-tdl-c130]{font-family:var(--font-family-1)!important}.sub-title[_ngcontent-tdl-c130]{color:#7c7b7b;font-size:15px;font-weight:700!important}.btn-label[_ngcontent-tdl-c130]{font-family:var(--font-family-1)!important;margin:0!important;cursor:pointer}.btn-icon[_ngcontent-tdl-c130], .btn-label[_ngcontent-tdl-c130]{color:#f1f1f1}.barra[_ngcontent-tdl-c130]{border-bottom:.5px solid #0bc9ec}.icon-edit[_ngcontent-tdl-c130]{color:#0952c5}.icon-edit[_ngcontent-tdl-c130], .icon-trash[_ngcontent-tdl-c130]{font-size:25px;height:100%;line-height:100%}.icon-trash[_ngcontent-tdl-c130]{color:#e90505}.icon-edit[_ngcontent-tdl-c130]:hover{color:#03175f;text-align:left;cursor:pointer}.ic[_ngcontent-tdl-c130]{color:#3f51b5;font-size:20px}.sub-ic[_ngcontent-tdl-c130]{color:#324091;font-size:18px}.brd[_ngcontent-tdl-c130]{border:1px solid #c8c8c8}[_nghost-tdl-c130]     .requerido{box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(169,68,66,.6)!important}.lbl-title[_ngcontent-tdl-c130]{font-family:var(--font-family-1)!important;font-size:15px}.i[_ngcontent-tdl-c130]{font-family:Lucida Console,Courier,monospace;line-height:24px!important}.lbl[_ngcontent-tdl-c130]{color:#212121;font-size:11px;font-family:var(--font-family-1)!important;font-weight:700!important}[_nghost-tdl-c130]     .ui-dialog-titlebar-icon{color:#fff!important}.clr[_ngcontent-tdl-c130]{color:#e9527c}.c[_ngcontent-tdl-c130]{color:#0383fb;font-size:20px}.b-bgris[_ngcontent-tdl-c130]{border-bottom:.5px solid #c8c8c8}&lt;/style&gt;<br/>
+  &lt;style&gt;.mat-stepper-vertical,.mat-stepper-horizontal{display:block}.mat-horizontal-stepper-header-container{white-space:nowrap;display:flex;align-items:center}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header-container{align-items:flex-start}.mat-stepper-horizontal-line{border-top-width:1px;border-top-style:solid;flex:auto;height:0;margin:0 -16px;min-width:32px}.mat-stepper-label-position-bottom .mat-stepper-horizontal-line{margin:0;min-width:0;position:relative;top:36px}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::before,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::before,.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::after,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::after{border-top-width:1px;border-top-style:solid;content:"";display:inline-block;height:0;position:absolute;top:36px;width:calc(50% - 20px)}.mat-horizontal-stepper-header{display:flex;height:72px;overflow:hidden;align-items:center;padding:0 24px}.mat-horizontal-stepper-header .mat-step-icon{margin-right:8px;flex:none}[dir=rtl] .mat-horizontal-stepper-header .mat-step-icon{margin-right:0;margin-left:8px}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header{box-sizing:border-box;flex-direction:column;height:auto;padding:24px}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::after,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::after{right:0}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::before,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::before{left:0}[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:last-child::before,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:first-child::after{display:none}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header .mat-step-icon{margin-right:0;margin-left:0}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header .mat-step-label{padding:16px 0 0 0;text-align:center;width:100%}.mat-vertical-stepper-header{display:flex;align-items:center;padding:24px;height:24px}.mat-vertical-stepper-header .mat-step-icon{margin-right:12px}[dir=rtl] .mat-vertical-stepper-header .mat-step-icon{margin-right:0;margin-left:12px}.mat-horizontal-stepper-content{outline:0}.mat-horizontal-stepper-content[aria-expanded=false]{height:0;overflow:hidden}.mat-horizontal-content-container{overflow:hidden;padding:0 24px 24px 24px}.mat-vertical-content-container{margin-left:36px;border:0;position:relative}[dir=rtl] .mat-vertical-content-container{margin-left:0;margin-right:36px}.mat-stepper-vertical-line::before{content:"";position:absolute;top:-16px;bottom:-16px;left:0;border-left-width:1px;border-left-style:solid}[dir=rtl] .mat-stepper-vertical-line::before{left:auto;right:0}.mat-vertical-stepper-content{overflow:hidden;outline:0}.mat-vertical-content{padding:0 24px 24px 24px}.mat-step:last-child .mat-vertical-content-container{border:none}<br/>
+&lt;/style&gt;<br/>
+  &lt;style&gt;.mat-step-header{overflow:hidden;outline:none;cursor:pointer;position:relative;box-sizing:content-box;-webkit-tap-highlight-color:transparent}.mat-step-optional,.mat-step-sub-label-error{font-size:12px}.mat-step-icon{border-radius:50%;height:24px;width:24px;flex-shrink:0;position:relative}.mat-step-icon-content,.mat-step-icon .mat-icon{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}.mat-step-icon .mat-icon{font-size:16px;height:16px;width:16px}.mat-step-icon-state-error .mat-icon{font-size:24px;height:24px;width:24px}.mat-step-label{display:inline-block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:50px;vertical-align:middle}.mat-step-text-label{text-overflow:ellipsis;overflow:hidden}.mat-step-header .mat-step-header-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}<br/>
+&lt;/style&gt;<br/>
+ &lt;/head&gt; <br/>
+ &lt;body class="mat-typography" _ngcontent-tdl-c118=""&gt; &lt;app-root ng-version="9.0.1"&gt;<br/>
+   &lt;app-spinner _nghost-tdl-c11=""&gt;<br/>
+    &lt;!----&gt;<br/>
+   &lt;/app-spinner&gt;<br/>
+   &lt;router-outlet&gt;&lt;/router-outlet&gt;<br/>
+   &lt;ng-component _nghost-tdl-c118="" class="ng-star-inserted"&gt;<br/>
+    &lt;app-content _ngcontent-tdl-c118="" _nghost-tdl-c114="" class="ng-tns-c114-1"&gt;<br/>
+     &lt;aside _ngcontent-tdl-c114="" class="ng-tns-c114-1"&gt;<br/>
+      &lt;app-menu _ngcontent-tdl-c114="" class="content-menu ng-tns-c114-1 ng-tns-c125-7 ng-trigger ng-trigger-openClose" _nghost-tdl-c125="" style="left: 0px;"&gt;<br/>
+       &lt;div _ngcontent-tdl-c125="" class="ui-g ng-tns-c125-7"&gt;<br/>
+        &lt;div _ngcontent-tdl-c125="" class="ui-g-12 mt-2 p-0 text-center ng-tns-c125-7"&gt;<br/>
+         &lt;div _ngcontent-tdl-c125="" class="logo-container ng-tns-c125-7"&gt;<br/>
+          &lt;img _ngcontent-tdl-c125="" src="assets/img/logo-paga-todo.svg" alt="Logotipo de empresa paga todo para todo!" class="logo ng-tns-c125-7"&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;h3 _ngcontent-tdl-c125="" class="title-menu ng-tns-c125-7"&gt;Backoffice&lt;/h3&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div _ngcontent-tdl-c125="" class="ui-g-12 item ng-tns-c125-7"&gt;<br/>
+         &lt;i _ngcontent-tdl-c125="" class="fa fa-home item-icon ng-tns-c125-7"&gt;&lt;/i&gt;&lt;span _ngcontent-tdl-c125="" class="ng-tns-c125-7"&gt;Inicio&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div _ngcontent-tdl-c125="" class="ui-g-12 p-0 m-0 barra ng-tns-c125-7"&gt;&lt;/div&gt;<br/>
+        &lt;ul _ngcontent-tdl-c125="" id="accordion" class="accordion ng-tns-c125-7 ng-star-inserted" style=""&gt;<br/>
+         &lt;li _ngcontent-tdl-c125="" class="item-bottom ng-tns-c125-7 ng-star-inserted"&gt;<br/>
+          &lt;div _ngcontent-tdl-c125="" class="menu ng-tns-c125-7" title="Menú principal que contiene los procesos del negocio del módulo administrativo"&gt;<br/>
+           &lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-cog item-icon"&gt;&lt;/i&gt; Administración &lt;i _ngcontent-tdl-c125="" class="fa fa-chevron-down ng-tns-c125-7"&gt;&lt;/i&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;ul _ngcontent-tdl-c125="" class="submenu ng-tns-c125-7 ng-trigger ng-trigger-open" style="height: 0px;"&gt;<br/>
+           &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;<br/>
+            &lt;div _ngcontent-tdl-c125="" class="sub-menu ng-tns-c125-7 ng-star-inserted"&gt;<br/>
+             &lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-cube sub-icon-wm"&gt;&lt;/i&gt; Caja Cartera &lt;i _ngcontent-tdl-c125="" class="fa fa-chevron-down ng-tns-c125-7"&gt;&lt;/i&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;ul _ngcontent-tdl-c125="" class="item-route ng-tns-c125-7 ng-trigger ng-trigger-open ng-star-inserted" style="height: 0px;"&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Permite realizar ajuste a una cartera" href="#/autenticado/administracion/caja-cartera/ajuste-cartera"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-cog sub-icon-wm2"&gt;&lt;/i&gt; Ajuste Cartera&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Permite realizar consultas de cartera" href="#/autenticado/administracion/caja-cartera/cartera"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-shopping-bag sub-icon-wm2"&gt;&lt;/i&gt; Cartera&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;&lt;!----&gt;<br/>
+            &lt;/ul&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+           &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;<br/>
+            &lt;div _ngcontent-tdl-c125="" class="sub-menu ng-tns-c125-7 ng-star-inserted"&gt;<br/>
+             &lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-wrench sub-icon-wm"&gt;&lt;/i&gt; Configuración &lt;i _ngcontent-tdl-c125="" class="fa fa-chevron-down ng-tns-c125-7"&gt;&lt;/i&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;ul _ngcontent-tdl-c125="" class="item-route ng-tns-c125-7 ng-trigger ng-trigger-open ng-star-inserted" style="height: 0px;"&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Menú que permite realizar las anulaciones de las apuestas de chance y azar" href="#/autenticado/administracion/configuracion/anulaciones"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-minus-square sub-icon-wm2"&gt;&lt;/i&gt; Anulaciones&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Pantalla que permite consultar, crear y editar usuarios con sus respectivos roles y empresas asociadas" href="#/autenticado/administracion/configuracion/configuracion-usuario"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-users sub-icon-wm2"&gt;&lt;/i&gt; Usuarios&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Menú que permite realizar la configuración de la rifa" href="#/autenticado/administracion/configuracion/configurar-rifa"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-ticket sub-icon-wm2"&gt;&lt;/i&gt; Configurar Rifa&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Pantalla que permite administrar las configuraciones para las loterias virtual" href="#/autenticado/administracion/configuracion/loteria-virtual"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-ticket sub-icon-wm2"&gt;&lt;/i&gt; Lotería Virtual&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Opción de menú que permite realizar la parametrización de tablas" href="#/autenticado/administracion/configuracion/parametrizaciones"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-cogs sub-icon-wm2"&gt;&lt;/i&gt; Parametrizaciones&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Menú que permite configurar los parámetros de cartera" href="#/autenticado/administracion/configuracion/parametros-cartera"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-tasks sub-icon-wm2"&gt;&lt;/i&gt; Parámetros Cartera&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Permite administrar los planes de comisiones" href="#/autenticado/administracion/configuracion/planes-comisiones"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-btc sub-icon-wm2"&gt;&lt;/i&gt; Plan de Comisiones&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Permite gestionar las plantillas de productos topes maximos" href="#/autenticado/administracion/configuracion/plantilla-productos"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-bars sub-icon-wm2"&gt;&lt;/i&gt; Plantilla Productos&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Pantalla que permite consultar, crear y editar los recursos del sistema" href="#/autenticado/administracion/configuracion/recursos"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-share-alt sub-icon-wm2"&gt;&lt;/i&gt; Recursos&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Pantalla que permite consultar, crear y editar los roles del sistema" href="#/autenticado/administracion/configuracion/roles"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-cogs sub-icon-wm2"&gt;&lt;/i&gt; Roles&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;&lt;!----&gt;<br/>
+            &lt;/ul&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+           &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;<br/>
+            &lt;div _ngcontent-tdl-c125="" class="sub-menu ng-tns-c125-7 ng-star-inserted"&gt;<br/>
+             &lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-money sub-icon-wm"&gt;&lt;/i&gt; Gestión Giros &lt;i _ngcontent-tdl-c125="" class="fa fa-chevron-down ng-tns-c125-7"&gt;&lt;/i&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;ul _ngcontent-tdl-c125="" class="item-route ng-tns-c125-7 ng-trigger ng-trigger-open ng-star-inserted" style="height: 0px;"&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Menú para acceder al modulo de consultar giros backoffice" href="#/autenticado/administracion/giros/consultar-giros"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-search-plus sub-icon-wm2"&gt;&lt;/i&gt; Consultar Giro&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Menú para acceder al modulo de pagos giros backoffice" href="#/autenticado/administracion/giros/pagos-giros"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa pagar-giros sub-icon-wm2"&gt;&lt;/i&gt; Pagar Giros&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;&lt;!----&gt;<br/>
+            &lt;/ul&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+           &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;<br/>
+            &lt;div _ngcontent-tdl-c125="" class="sub-menu ng-tns-c125-7 ng-star-inserted"&gt;<br/>
+             &lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-clock-o sub-icon-wm"&gt;&lt;/i&gt; Horarios &lt;i _ngcontent-tdl-c125="" class="fa fa-chevron-down ng-tns-c125-7"&gt;&lt;/i&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;ul _ngcontent-tdl-c125="" class="item-route ng-tns-c125-7 ng-trigger ng-trigger-open ng-star-inserted" style="height: 0px;"&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Permite administrar la programación para los asesores" href="#/autenticado/administracion/horario/programacion-asesores"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-address-book-o sub-icon-wm2"&gt;&lt;/i&gt; Programación&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Permite administrar los horarios" href="#/autenticado/administracion/horario/programacion-horario"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-calendar-o sub-icon-wm2"&gt;&lt;/i&gt; Programación Horarios&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;&lt;!----&gt;<br/>
+            &lt;/ul&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+           &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;<br/>
+            &lt;div _ngcontent-tdl-c125="" class="sub-menu ng-tns-c125-7 ng-star-inserted"&gt;<br/>
+             &lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-sitemap sub-icon-wm"&gt;&lt;/i&gt; Multinivel &lt;i _ngcontent-tdl-c125="" class="fa fa-chevron-down ng-tns-c125-7"&gt;&lt;/i&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;ul _ngcontent-tdl-c125="" class="item-route ng-tns-c125-7 ng-trigger ng-trigger-open ng-star-inserted" style="height: 0px;"&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Permite gestionar los distribuidores" href="#/autenticado/administracion/multinivel/gestion-distribuidores"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-handshake-o sub-icon-wm2"&gt;&lt;/i&gt; Gestión Distribuidores&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Permite administrar las empresas del sistema" href="#/autenticado/administracion/multinivel/gestion-empresas"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-university sub-icon-wm2"&gt;&lt;/i&gt; Gestión Empresas&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Permite gestionar los operadores" href="#/autenticado/administracion/multinivel/gestion-operadores"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-address-book sub-icon-wm2"&gt;&lt;/i&gt; Gestión Operadores&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;&lt;!----&gt;<br/>
+            &lt;/ul&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+           &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;<br/>
+            &lt;div _ngcontent-tdl-c125="" class="sub-menu ng-tns-c125-7 ng-star-inserted"&gt;<br/>
+             &lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-map sub-icon-wm"&gt;&lt;/i&gt; Papelería &lt;i _ngcontent-tdl-c125="" class="fa fa-chevron-down ng-tns-c125-7"&gt;&lt;/i&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;ul _ngcontent-tdl-c125="" class="item-route ng-tns-c125-7 ng-trigger ng-trigger-open ng-star-inserted" style="height: 0px;"&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Creación de configuraciones de impresión" href="#/autenticado/administracion/papeleria/configuracion-impresion"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-paint-brush sub-icon-wm2"&gt;&lt;/i&gt; Plantilla de impresión&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Permite administrar el inventario de la papelería" href="#/autenticado/administracion/papeleria/inventario-general"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-list sub-icon-wm2"&gt;&lt;/i&gt; Inventario General&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;&lt;!----&gt;<br/>
+            &lt;/ul&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+           &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;<br/>
+            &lt;div _ngcontent-tdl-c125="" class="sub-menu ng-tns-c125-7 ng-star-inserted"&gt;<br/>
+             &lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-calculator sub-icon-wm"&gt;&lt;/i&gt; Recursos Caja &lt;i _ngcontent-tdl-c125="" class="fa fa-chevron-down ng-tns-c125-7"&gt;&lt;/i&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;ul _ngcontent-tdl-c125="" class="item-route ng-tns-c125-7 ng-trigger ng-trigger-open ng-star-inserted" style="height: 0px;"&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;<br/>
+              &lt;div _ngcontent-tdl-c125="" class="sub-menu-hijo ng-tns-c125-7 ng-star-inserted"&gt;<br/>
+               &lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-bars sub-icon-wm"&gt;&lt;/i&gt; Tipos Movimientos &lt;i _ngcontent-tdl-c125="" class="fa fa-chevron-down ng-tns-c125-7"&gt;&lt;/i&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;ul _ngcontent-tdl-c125="" class="item-route ng-tns-c125-7 ng-trigger ng-trigger-open ng-star-inserted" style="height: 0px;"&gt;<br/>
+               &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7" title="Menú que gestiona los tipos de movimientos" href="#/autenticado/administracion/recursos-caja/tipos-movimientos/gestion"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item-hijo ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-cogs sub-icon-wm2"&gt;&lt;/i&gt; Gestión&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+               &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7" title="Menú que permite el reinicio de consecutivos de los movimientos" href="#/autenticado/administracion/recursos-caja/tipos-movimientos/reinicio-consecutivos"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item-hijo ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-repeat sub-icon-wm2"&gt;&lt;/i&gt; Reinicio Consecutivo&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+               &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7" title="Menú que permite acepar o rechazar las solicitudes de reinicio de movimientos" href="#/autenticado/administracion/recursos-caja/tipos-movimientos/solicitudes"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item-hijo ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-file-text-o sub-icon-wm2"&gt;&lt;/i&gt; Solicitudes&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;!----&gt;<br/>
+              &lt;/ul&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Opción del menú para la apertura de cajas" href="#/autenticado/administracion/recursos-caja/apertura-caja"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-external-link-square sub-icon-wm2"&gt;&lt;/i&gt; Apertura Caja&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Opción del menú para el cierre de cajas" href="#/autenticado/administracion/recursos-caja/cierre-caja"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-key sub-icon-wm2"&gt;&lt;/i&gt; Cierre Caja&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Opción del menú para la creación de cajas contables" href="#/autenticado/administracion/recursos-caja/crear-caja"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-plus-circle sub-icon-wm2"&gt;&lt;/i&gt; Crear Caja&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Opción del menú para los pagos de premios" href="#/autenticado/administracion/recursos-caja/pago-premios"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-credit-card-alt sub-icon-wm2"&gt;&lt;/i&gt; Pagos Premios&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Opción del menú para la gestión de recaudos cartera" href="#/autenticado/administracion/recursos-caja/recaudo-cartera"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-money sub-icon-wm2"&gt;&lt;/i&gt; Recaudo Cartera&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Opción del menú para los registros de egresos" href="#/autenticado/administracion/recursos-caja/registro-egreso"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-expand sub-icon-wm2"&gt;&lt;/i&gt; Registro Egreso&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Opción del menú para los registros de ingresos" href="#/autenticado/administracion/recursos-caja/registro-ingreso"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-compress sub-icon-wm2"&gt;&lt;/i&gt; Registro Ingreso&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Opción del menú para los reportes de cartera" href="#/autenticado/administracion/recursos-caja/reporte-cartera"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-file-pdf-o sub-icon-wm2"&gt;&lt;/i&gt; Reporte Cartera&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Opción del menú para la gestión de tipos de pagos" href="#/autenticado/administracion/recursos-caja/tipos-pagos"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-cc-visa sub-icon-wm2"&gt;&lt;/i&gt; Tipos Pagos&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;&lt;!----&gt;<br/>
+            &lt;/ul&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+           &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;<br/>
+            &lt;div _ngcontent-tdl-c125="" class="sub-menu ng-tns-c125-7 ng-star-inserted"&gt;<br/>
+             &lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-reply sub-icon-wm"&gt;&lt;/i&gt; Solicitudes &lt;i _ngcontent-tdl-c125="" class="fa fa-chevron-down ng-tns-c125-7"&gt;&lt;/i&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;ul _ngcontent-tdl-c125="" class="item-route ng-tns-c125-7 ng-trigger ng-trigger-open ng-star-inserted" style="height: 0px;"&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Pantalla que permite autorizar las solicitudes de calendario sorteos" href="#/autenticado/administracion/solicitudes/calendario-sorteos"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-calendar-check-o sub-icon-wm2"&gt;&lt;/i&gt; Sorteos&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;&lt;!----&gt;<br/>
+            &lt;/ul&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;&lt;!----&gt;<br/>
+          &lt;/ul&gt;&lt;/li&gt;<br/>
+         &lt;li _ngcontent-tdl-c125="" class="item-bottom ng-tns-c125-7 ng-star-inserted"&gt;<br/>
+          &lt;div _ngcontent-tdl-c125="" class="menu ng-tns-c125-7" title="Menú principal que contiene los procesos del negocio del módulo de escrutinio"&gt;<br/>
+           &lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-pie-chart item-icon"&gt;&lt;/i&gt; Escrutinio &lt;i _ngcontent-tdl-c125="" class="fa fa-chevron-down ng-tns-c125-7 rotate"&gt;&lt;/i&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;ul _ngcontent-tdl-c125="" class="submenu ng-tns-c125-7 ng-trigger ng-trigger-open" style=""&gt;<br/>
+           &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;<br/>
+            &lt;div _ngcontent-tdl-c125="" class="sub-menu ng-tns-c125-7 ng-star-inserted"&gt;<br/>
+             &lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-sliders sub-icon-wm"&gt;&lt;/i&gt; Gestión Premios &lt;i _ngcontent-tdl-c125="" class="fa fa-chevron-down ng-tns-c125-7"&gt;&lt;/i&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;ul _ngcontent-tdl-c125="" class="item-route ng-tns-c125-7 ng-trigger ng-trigger-open ng-star-inserted" style="height: 0px;"&gt;<br/>
+             &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Menú que permite realizar la parametrización de los premios" href="#/autenticado/escrutinio/parametro-premio"&gt;&lt;span _ngcontent-tdl-c125="" class="st-sub-item ng-tns-c125-7"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-bar-chart sub-icon-wm2"&gt;&lt;/i&gt; Parámetros&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;&lt;!----&gt;<br/>
+            &lt;/ul&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+           &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted active-link" title="Configurar o parametrizar los sorteos para cada lotería" href="#/autenticado/escrutinio/calendario-sorteos"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-calendar-plus-o sub-icon"&gt;&lt;/i&gt;&lt;span _ngcontent-tdl-c125="" class="st-item ng-tns-c125-7"&gt;Sorteos&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+           &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Pantalla que permite consultar el escrutinio." href="#/autenticado/escrutinio/consultar-escrutinio"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-search-plus sub-icon"&gt;&lt;/i&gt;&lt;span _ngcontent-tdl-c125="" class="st-item ng-tns-c125-7"&gt;Confirmar Escrutinio&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+           &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="permite reversar el escrutinio" href="#/autenticado/escrutinio/consultar-escrutinio-reversar"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-history sub-icon"&gt;&lt;/i&gt;&lt;span _ngcontent-tdl-c125="" class="st-item ng-tns-c125-7"&gt;Reversar Escrutinio&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+           &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Pantalla que permite escrutar." href="#/autenticado/escrutinio/escrutar"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-search-plus sub-icon"&gt;&lt;/i&gt;&lt;span _ngcontent-tdl-c125="" class="st-item ng-tns-c125-7"&gt;Escrutar&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+           &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Pantalla que permite realizar la creación y modificación de las loterias" href="#/autenticado/escrutinio/loterias"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-ticket sub-icon"&gt;&lt;/i&gt;&lt;span _ngcontent-tdl-c125="" class="st-item ng-tns-c125-7"&gt;Loterias&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+           &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Pantalla que permite registrar y consultar el número ganador" href="#/autenticado/escrutinio/numero-ganador"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-trophy sub-icon"&gt;&lt;/i&gt;&lt;span _ngcontent-tdl-c125="" class="st-item ng-tns-c125-7"&gt; Número Ganador&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;<br/>
+           &lt;li _ngcontent-tdl-c125="" class="ng-tns-c125-7 ng-star-inserted" style=""&gt;&lt;a _ngcontent-tdl-c125="" routerlinkactive="active-link" class="ng-tns-c125-7 ng-star-inserted" title="Menú que permite la exclusión de números" href="#/autenticado/escrutinio/numeros-excluidos"&gt;&lt;i _ngcontent-tdl-c125="" class="ng-tns-c125-7 fa fa-list-ol sub-icon"&gt;&lt;/i&gt;&lt;span _ngcontent-tdl-c125="" class="st-item ng-tns-c125-7"&gt;Números Excluidos&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;/li&gt;&lt;!----&gt;<br/>
+          &lt;/ul&gt;&lt;/li&gt;&lt;!----&gt;<br/>
+        &lt;/ul&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/app-menu&gt;&lt;!----&gt;<br/>
+     &lt;/aside&gt;<br/>
+     &lt;div _ngcontent-tdl-c114="" id="maincontent" class="body-style ng-tns-c114-1"&gt;<br/>
+      &lt;header _ngcontent-tdl-c114="" class="ng-tns-c114-1"&gt;<br/>
+       &lt;app-header _ngcontent-tdl-c114="" class="ng-tns-c114-1 ng-tns-c124-8" _nghost-tdl-c124=""&gt;<br/>
+        &lt;div _ngcontent-tdl-c124="" class="header ng-tns-c124-8"&gt;<br/>
+         &lt;div _ngcontent-tdl-c124="" class="ui-g w-100 ng-tns-c124-8"&gt;<br/>
+          &lt;div _ngcontent-tdl-c124="" class="ui-g-3 text-right p-0 ng-tns-c124-8"&gt;<br/>
+           &lt;div _ngcontent-tdl-c124="" class="hambu ng-tns-c124-8 ng-trigger ng-trigger-icon-open-close" style="margin-left: 241px;"&gt;<br/>
+            &lt;img _ngcontent-tdl-c124="" src="assets/header/back@3x.svg" alt="Icono para mostrar o ocultar menu" class="back ng-tns-c124-8"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div _ngcontent-tdl-c124="" class="ui-g-8 text-right p-0 pr-1 ng-tns-c124-8"&gt;<br/>
+           &lt;div _ngcontent-tdl-c124="" class="ui-g-8 p-0 div-empresas ng-tns-c124-8"&gt;<br/>
+            &lt;div _ngcontent-tdl-c124="" class="ui-g-12 p-0 ng-tns-c124-8"&gt;<br/>
+             &lt;div _ngcontent-tdl-c124="" class="inner-addon left-addon ng-tns-c124-8"&gt;<br/>
+              &lt;i _ngcontent-tdl-c124="" class="fa fa-building icon-building aico ng-tns-c124-8"&gt;&lt;/i&gt;&lt;p-dropdown _ngcontent-tdl-c124="" inputid="inempresaaheadie" name="inempresaaheadie" emptyfiltermessage="No hay empresas" arialabel="empresa a gestionar" placeholder="Seleccione una opción" appendto="body" styleclass="w-80 dropdown-empresas text-left" class="ng-tns-c124-8 ng-tns-c59-9 ng-untouched ng-pristine ng-valid ui-inputwrapper-filled" title="Selección de empresa a gestionar"&gt;<br/>
+               &lt;div class="ng-tns-c59-9 w-80 dropdown-empresas text-left ui-dropdown ui-widget ui-state-default ui-corner-all ui-helper-clearfix"&gt;<br/>
+                &lt;div class="ui-helper-hidden-accessible ng-tns-c59-9"&gt;<br/>
+                 &lt;input type="text" readonly aria-haspopup="listbox" class="ng-tns-c59-9" id="inempresaaheadie" aria-label="11601 - GO"&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div class="ui-helper-hidden-accessible ui-dropdown-hidden-select ng-tns-c59-9"&gt;<br/>
+                 &lt;select tabindex="-1" aria-hidden="true" class="ng-tns-c59-9" name="inempresaaheadie"&gt;&lt;option value="" class="ng-tns-c59-9 ng-star-inserted"&gt;Seleccione una opción&lt;/option&gt;&lt;!----&gt;&lt;option class="ng-tns-c59-9 ng-star-inserted" value="47"&gt;11601 - GO&lt;/option&gt;&lt;!----&gt;&lt;/select&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div class="ui-dropdown-label-container ng-tns-c59-9"&gt;<br/>
+                 &lt;label class="ng-tns-c59-9 ui-dropdown-label ui-inputtext ui-corner-all ng-star-inserted"&gt;11601 - GO&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/label&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div role="button" aria-haspopup="listbox" class="ui-dropdown-trigger ui-state-default ui-corner-right ng-tns-c59-9"&gt;<br/>
+                 &lt;span class="ui-dropdown-trigger-icon ui-clickable ng-tns-c59-9 pi pi-chevron-down"&gt;&lt;/span&gt;<br/>
+                &lt;/div&gt;&lt;!----&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/p-dropdown&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div _ngcontent-tdl-c124="" class="ui-g-4 p-0 ng-tns-c124-8"&gt;<br/>
+            &lt;div _ngcontent-tdl-c124="" class="ui-g-12 p-0 pt-2 ng-tns-c124-8"&gt;<br/>
+             &lt;span _ngcontent-tdl-c124="" class="font-new-roman font-size-15 ng-tns-c124-8" style="color: #fff;"&gt; 13/04/2023 11:57:18 &lt;/span&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div _ngcontent-tdl-c124="" class="ui-g-12 p-0 ng-tns-c124-8"&gt;<br/>
+             &lt;span _ngcontent-tdl-c124="" class="font-new-roman font-size-16 ng-tns-c124-8" style="color: #fff;"&gt; JOHANA GIRALDO &lt;/span&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div _ngcontent-tdl-c124="" class="ui-g-12 p-0 ng-tns-c124-8"&gt;<br/>
+             &lt;span _ngcontent-tdl-c124="" class="font-new-roman font-size-15 ng-tns-c124-8" style="color: #fff;"&gt; ADMINISTRADOR &lt;/span&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div _ngcontent-tdl-c124="" class="ui-g-1 p-0 ng-tns-c124-8"&gt;<br/>
+           &lt;div _ngcontent-tdl-c124="" class="ui-g-12 pad ng-tns-c124-8"&gt;<br/>
+            &lt;span _ngcontent-tdl-c124="" class="font-new-roman font-size-16 mr-3 ng-tns-c124-8 ng-star-inserted"&gt;&lt;img _ngcontent-tdl-c124="" src="assets/avatar.png" alt="user" class="ng-tns-c124-8"&gt;&lt;/span&gt;&lt;!----&gt;&lt;i _ngcontent-tdl-c124="" class="fa fa-chevron-down font-size-16 ng-tns-c124-8"&gt;&lt;/i&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p-menu _ngcontent-tdl-c124="" id="menuUserSettings" class="ng-tns-c124-8 ng-tns-c120-10"&gt;<br/>
+         &lt;!----&gt;<br/>
+        &lt;/p-menu&gt;<br/>
+       &lt;/app-header&gt;<br/>
+      &lt;/header&gt;<br/>
+      &lt;main _ngcontent-tdl-c114="" class="ng-tns-c114-1"&gt;<br/>
+       &lt;div _ngcontent-tdl-c114="" class="ng-tns-c114-1 ng-trigger ng-trigger-openClose" style="margin-left: 241px;"&gt;<br/>
+        &lt;app-breadcrumb _ngcontent-tdl-c114="" class="ng-tns-c114-1" _nghost-tdl-c126=""&gt;<br/>
+         &lt;nav _ngcontent-tdl-c126="" aria-label="breadcrumb"&gt;<br/>
+          &lt;div _ngcontent-tdl-c126="" class="breadcrumb miga-pan"&gt;<br/>
+           &lt;i _ngcontent-tdl-c126="" class="fa icon fa-pie-chart"&gt;&lt;/i&gt;&lt;span _ngcontent-tdl-c126="" class="miga-modulo"&gt;Escrutinio &lt;/span&gt;&lt;span _ngcontent-tdl-c126="" class="miga-url"&gt; / Sorteos&lt;/span&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/nav&gt;<br/>
+         &lt;p-messages _ngcontent-tdl-c126="" key="inf" styleclass="ui-messages" class="ng-tns-c105-11"&gt;<br/>
+          &lt;!----&gt;<br/>
+         &lt;/p-messages&gt;<br/>
+         &lt;p-messages _ngcontent-tdl-c126="" key="msj" styleclass="ui-messages" class="ng-tns-c105-12"&gt;<br/>
+          &lt;!----&gt;<br/>
+         &lt;/p-messages&gt;<br/>
+         &lt;div _ngcontent-tdl-c126="" class="layout"&gt;<br/>
+          &lt;div _ngcontent-tdl-c126="" class="configLayout"&gt;<br/>
+           &lt;!----&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+        &lt;/app-breadcrumb&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div _ngcontent-tdl-c114="" class="contenido ng-tns-c114-1 ng-trigger ng-trigger-openClose" style="margin-left: 241px;"&gt;<br/>
+        &lt;router-outlet _ngcontent-tdl-c114="" class="ng-tns-c114-1"&gt;&lt;/router-outlet&gt;&lt;ng-component _nghost-tdl-c130="" class="ng-star-inserted" style=""&gt;<br/>
+         &lt;!----&gt;<br/>
+         &lt;div _ngcontent-tdl-c130="" class="card-panel mat-elevation-z8 ng-star-inserted" style=""&gt;<br/>
+          &lt;div _ngcontent-tdl-c130="" class="card-panel-header"&gt;<br/>
+           &lt;span _ngcontent-tdl-c130="" class="card-panel-header__title"&gt; Crear Sorteos &lt;/span&gt;<br/>
+          &lt;/div&gt;&lt;mat-horizontal-stepper _ngcontent-tdl-c130="" aria-orientation="horizontal" role="tablist" linear="" class="mat-stepper-horizontal ng-tns-c82-17 mat-stepper-label-position-end"&gt;<br/>
+           &lt;div class="mat-horizontal-stepper-header-container ng-tns-c82-17"&gt;<br/>
+            &lt;mat-step-header role="tab" class="mat-step-header mat-horizontal-stepper-header ng-tns-c82-17 ng-star-inserted" tabindex="0" id="cdk-step-label-0-0" aria-posinset="1" aria-setsize="3" aria-controls="cdk-step-content-0-0" aria-selected="true"&gt;<br/>
+             &lt;div matripple="" class="mat-ripple mat-step-header-ripple"&gt;&lt;/div&gt;<br/>
+             &lt;div class="mat-step-icon mat-step-icon-state-number mat-step-icon-selected"&gt;<br/>
+              &lt;div class="mat-step-icon-content"&gt;<br/>
+               &lt;!----&gt;&lt;span class="ng-star-inserted"&gt;1&lt;/span&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+              &lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="mat-step-label mat-step-label-active mat-step-label-selected"&gt;<br/>
+              Información&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/mat-step-header&gt;<br/>
+            &lt;div class="mat-stepper-horizontal-line ng-tns-c82-17 ng-star-inserted"&gt;&lt;/div&gt;&lt;!----&gt;&lt;!----&gt;&lt;mat-step-header role="tab" class="mat-step-header mat-horizontal-stepper-header ng-tns-c82-17 ng-star-inserted" tabindex="-1" id="cdk-step-label-0-1" aria-posinset="2" aria-setsize="3" aria-controls="cdk-step-content-0-1" aria-selected="false"&gt;<br/>
+             &lt;div matripple="" class="mat-ripple mat-step-header-ripple"&gt;&lt;/div&gt;<br/>
+             &lt;div class="mat-step-icon mat-step-icon-state-number"&gt;<br/>
+              &lt;div class="mat-step-icon-content"&gt;<br/>
+               &lt;!----&gt;&lt;span class="ng-star-inserted"&gt;2&lt;/span&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+              &lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="mat-step-label"&gt;<br/>
+              Día(s)&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/mat-step-header&gt;<br/>
+            &lt;div class="mat-stepper-horizontal-line ng-tns-c82-17 ng-star-inserted"&gt;&lt;/div&gt;&lt;!----&gt;&lt;!----&gt;&lt;mat-step-header role="tab" class="mat-step-header mat-horizontal-stepper-header ng-tns-c82-17 ng-star-inserted" tabindex="-1" id="cdk-step-label-0-2" aria-posinset="3" aria-setsize="3" aria-controls="cdk-step-content-0-2" aria-selected="false"&gt;<br/>
+             &lt;div matripple="" class="mat-ripple mat-step-header-ripple"&gt;&lt;/div&gt;<br/>
+             &lt;div class="mat-step-icon mat-step-icon-state-number"&gt;<br/>
+              &lt;div class="mat-step-icon-content"&gt;<br/>
+               &lt;!----&gt;&lt;span class="ng-star-inserted"&gt;3&lt;/span&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+              &lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="mat-step-label"&gt;<br/>
+              Confirmación&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/mat-step-header&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="mat-horizontal-content-container ng-tns-c82-17"&gt;<br/>
+            &lt;div role="tabpanel" class="mat-horizontal-stepper-content ng-trigger ng-trigger-stepTransition ng-tns-c82-17 ng-star-inserted" id="cdk-step-content-0-0" tabindex="0" aria-labelledby="cdk-step-label-0-0" aria-expanded="true" style="transform: none; visibility: visible;"&gt;<br/>
+             &lt;!----&gt;&lt;p-panel _ngcontent-tdl-c130="" styleclass="mb-2 steps-pnl pnl-pt" class="ng-tns-c92-18 ng-star-inserted" style=""&gt;<br/>
+              &lt;div class="ng-tns-c92-18 mb-2 steps-pnl pnl-pt ui-panel ui-widget ui-widget-content ui-corner-all" id="ui-panel-0"&gt;<br/>
+               &lt;div class="ng-tns-c92-18 ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all ng-star-inserted"&gt;<br/>
+                &lt;!----&gt;&lt;p-header _ngcontent-tdl-c130="" class="ng-tns-c92-18"&gt;<br/>
+                 &lt;span _ngcontent-tdl-c130="" class="steps-circle i"&gt;i&lt;/span&gt;<br/>
+                 &lt;span _ngcontent-tdl-c130="" class="sub-title"&gt; Ingrese la información de la lotería o sorteo&lt;/span&gt;<br/>
+                &lt;/p-header&gt;&lt;!----&gt;<br/>
+               &lt;/div&gt;&lt;!----&gt;<br/>
+               &lt;div role="region" class="ui-panel-content-wrapper ng-tns-c92-18 ng-trigger ng-trigger-panelContent" id="ui-panel-0-content" aria-hidden="false" aria-labelledby="ui-panel-0-label" style="opacity: 1;"&gt;<br/>
+                &lt;div class="ui-panel-content ui-widget-content ng-tns-c92-18"&gt;<br/>
+                 &lt;div _ngcontent-tdl-c130="" class="ui-g mt-4 ng-tns-c92-18"&gt;<br/>
+                  &lt;div _ngcontent-tdl-c130="" class="ui-g-4"&gt;<br/>
+                   &lt;div _ngcontent-tdl-c130="" class="ui-g-12 pb-0 ml-2"&gt;<br/>
+                    &lt;label _ngcontent-tdl-c130="" for="fcinit" class="mb-0 mt-1 lbl"&gt;Fecha Inicio:&lt;/label&gt;&lt;i _ngcontent-tdl-c130="" class="fa fa-asterisk text-secondary font-size-10"&gt;&lt;/i&gt;<br/>
+                   &lt;/div&gt;<br/>
+                   &lt;div _ngcontent-tdl-c130="" class="ui-g-12 pt-0"&gt;<br/>
+                    &lt;div _ngcontent-tdl-c130="" class="inner-addon left-addon"&gt;<br/>
+                     &lt;p-calendar _ngcontent-tdl-c130="" name="fcinit" inputid="fcinit" showbuttonbar="true" yearrange="2000:2025" dateformat="yy-MM-dd" title="Fecha Inicio" class="ng-tns-c91-19 ng-pristine ng-valid ng-touched"&gt;<br/>
+                      &lt;span class="ng-tns-c91-19 ui-calendar"&gt;&lt;input type="text" autocomplete="off" class="ng-tns-c91-19 calendar-app-sm ui-inputtext ui-widget ui-state-default ui-corner-all ng-star-inserted" readonly placeholder="" id="fcinit" name="fcinit" style=""&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+                       &lt;div class="ng-trigger ng-trigger-overlayAnimation ng-tns-c91-19 ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-shadow ng-star-inserted" style="z-index: 1003; top: -269px; left: 0px; transform: translateY(0px); opacity: 1;"&gt;<br/>
+                        &lt;div class="ui-datepicker-group ui-widget-content ng-tns-c91-19 ng-star-inserted" style=""&gt;<br/>
+                         &lt;div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all ng-tns-c91-19"&gt;<br/>
+                          &lt;a tabindex="0" class="ui-datepicker-prev ui-corner-all ng-tns-c91-19 ng-star-inserted"&gt;&lt;span class="ui-datepicker-prev-icon pi pi-chevron-left ng-tns-c91-19"&gt;&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;<br/>
+                          &lt;div class="ui-datepicker-title ng-tns-c91-19"&gt;<br/>
+                           &lt;!----&gt;&lt;select tabindex="0" class="ui-datepicker-month ng-tns-c91-19 ng-star-inserted"&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="0"&gt;Enero&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="1"&gt;Febrero&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2"&gt;Marzo&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="3"&gt;Abril&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="4"&gt;Mayo&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="5"&gt;Junio&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="6"&gt;Julio&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="7"&gt;Agosto&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="8"&gt;Septiembre&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="9"&gt;Octubre&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="10"&gt;Noviembre&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="11"&gt;Diciembre&lt;/option&gt;&lt;!----&gt;&lt;/select&gt;&lt;!----&gt;&lt;select tabindex="0" class="ui-datepicker-year ng-tns-c91-19 ng-star-inserted"&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2000"&gt;2000&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2001"&gt;2001&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2002"&gt;2002&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2003"&gt;2003&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2004"&gt;2004&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2005"&gt;2005&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2006"&gt;2006&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2007"&gt;2007&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2008"&gt;2008&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2009"&gt;2009&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2010"&gt;2010&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2011"&gt;2011&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2012"&gt;2012&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2013"&gt;2013&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2014"&gt;2014&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2015"&gt;2015&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2016"&gt;2016&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2017"&gt;2017&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2018"&gt;2018&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2019"&gt;2019&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2020"&gt;2020&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2021"&gt;2021&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2022"&gt;2022&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2023"&gt;2023&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2024"&gt;2024&lt;/option&gt;&lt;option class="ng-tns-c91-19 ng-star-inserted" value="2025"&gt;2025&lt;/option&gt;&lt;!----&gt;&lt;/select&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+                          &lt;/div&gt;&lt;a tabindex="0" class="ui-datepicker-next ui-corner-all ng-tns-c91-19 ng-star-inserted"&gt;&lt;span class="ui-datepicker-next-icon pi pi-chevron-right ng-tns-c91-19"&gt;&lt;/span&gt;&lt;/a&gt;&lt;!----&gt;<br/>
+                         &lt;/div&gt;<br/>
+                         &lt;div class="ui-datepicker-calendar-container ng-tns-c91-19 ng-star-inserted"&gt;<br/>
+                          &lt;table class="ui-datepicker-calendar ng-tns-c91-19"&gt;<br/>
+                           &lt;thead class="ng-tns-c91-19"&gt;<br/>
+                            &lt;tr class="ng-tns-c91-19"&gt;<br/>
+                             &lt;!----&gt;<br/>
+                             &lt;th scope="col" class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;span class="ng-tns-c91-19"&gt;Lu&lt;/span&gt;&lt;/th&gt;<br/>
+                             &lt;th scope="col" class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;span class="ng-tns-c91-19"&gt;Ma&lt;/span&gt;&lt;/th&gt;<br/>
+                             &lt;th scope="col" class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;span class="ng-tns-c91-19"&gt;Mi&lt;/span&gt;&lt;/th&gt;<br/>
+                             &lt;th scope="col" class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;span class="ng-tns-c91-19"&gt;Ju&lt;/span&gt;&lt;/th&gt;<br/>
+                             &lt;th scope="col" class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;span class="ng-tns-c91-19"&gt;Vi&lt;/span&gt;&lt;/th&gt;<br/>
+                             &lt;th scope="col" class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;span class="ng-tns-c91-19"&gt;Sa&lt;/span&gt;&lt;/th&gt;<br/>
+                             &lt;th scope="col" class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;span class="ng-tns-c91-19"&gt;Do&lt;/span&gt;&lt;/th&gt;&lt;!----&gt;<br/>
+                            &lt;/tr&gt;<br/>
+                           &lt;/thead&gt;<br/>
+                           &lt;tbody class="ng-tns-c91-19"&gt;<br/>
+                            &lt;tr class="ng-tns-c91-19 ng-star-inserted"&gt;<br/>
+                             &lt;!----&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ui-datepicker-other-month ng-star-inserted"&gt;&lt;!----&gt;&lt;span class="ui-state-default ui-state-disabled ng-tns-c91-19 ng-star-inserted"&gt; 26 &lt;/span&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ui-datepicker-other-month ng-star-inserted"&gt;&lt;!----&gt;&lt;span class="ui-state-default ui-state-disabled ng-tns-c91-19 ng-star-inserted"&gt; 27 &lt;/span&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ui-datepicker-other-month ng-star-inserted"&gt;&lt;!----&gt;&lt;span class="ui-state-default ui-state-disabled ng-tns-c91-19 ng-star-inserted"&gt; 28 &lt;/span&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ui-datepicker-other-month ng-star-inserted"&gt;&lt;!----&gt;&lt;span class="ui-state-default ui-state-disabled ng-tns-c91-19 ng-star-inserted"&gt; 29 &lt;/span&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ui-datepicker-other-month ng-star-inserted"&gt;&lt;!----&gt;&lt;span class="ui-state-default ui-state-disabled ng-tns-c91-19 ng-star-inserted"&gt; 30 &lt;/span&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;1&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;2&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;&lt;!----&gt;<br/>
+                            &lt;/tr&gt;<br/>
+                            &lt;tr class="ng-tns-c91-19 ng-star-inserted"&gt;<br/>
+                             &lt;!----&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;3&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;4&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;5&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;6&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;7&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;8&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;9&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;&lt;!----&gt;<br/>
+                            &lt;/tr&gt;<br/>
+                            &lt;tr class="ng-tns-c91-19 ng-star-inserted"&gt;<br/>
+                             &lt;!----&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;10&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;11&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;12&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;13&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;14&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;15&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;16&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;&lt;!----&gt;<br/>
+                            &lt;/tr&gt;<br/>
+                            &lt;tr class="ng-tns-c91-19 ng-star-inserted"&gt;<br/>
+                             &lt;!----&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;17&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;18&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;19&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;20&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;21&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;22&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;23&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;&lt;!----&gt;<br/>
+                            &lt;/tr&gt;<br/>
+                            &lt;tr class="ng-tns-c91-19 ng-star-inserted"&gt;<br/>
+                             &lt;!----&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;24&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;25&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;26&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;27&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;28&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;29&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;30&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;&lt;!----&gt;<br/>
+                            &lt;/tr&gt;<br/>
+                            &lt;tr class="ng-tns-c91-19 ng-star-inserted"&gt;<br/>
+                             &lt;!----&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ng-star-inserted"&gt;&lt;a draggable="false" class="ui-state-default ng-tns-c91-19 ng-star-inserted"&gt;31&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/a&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ui-datepicker-other-month ng-star-inserted"&gt;&lt;!----&gt;&lt;span class="ui-state-default ui-state-disabled ng-tns-c91-19 ng-star-inserted"&gt; 1 &lt;/span&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ui-datepicker-other-month ng-star-inserted"&gt;&lt;!----&gt;&lt;span class="ui-state-default ui-state-disabled ng-tns-c91-19 ng-star-inserted"&gt; 2 &lt;/span&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ui-datepicker-other-month ng-star-inserted"&gt;&lt;!----&gt;&lt;span class="ui-state-default ui-state-disabled ng-tns-c91-19 ng-star-inserted"&gt; 3 &lt;/span&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ui-datepicker-other-month ng-star-inserted"&gt;&lt;!----&gt;&lt;span class="ui-state-default ui-state-disabled ng-tns-c91-19 ng-star-inserted"&gt; 4 &lt;/span&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ui-datepicker-other-month ng-star-inserted"&gt;&lt;!----&gt;&lt;span class="ui-state-default ui-state-disabled ng-tns-c91-19 ng-star-inserted"&gt; 5 &lt;/span&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;<br/>
+                             &lt;td class="ng-tns-c91-19 ui-datepicker-other-month ng-star-inserted"&gt;&lt;!----&gt;&lt;span class="ui-state-default ui-state-disabled ng-tns-c91-19 ng-star-inserted"&gt; 6 &lt;/span&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/td&gt;&lt;!----&gt;<br/>
+                            &lt;/tr&gt;&lt;!----&gt;<br/>
+                           &lt;/tbody&gt;<br/>
+                          &lt;/table&gt;<br/>
+                         &lt;/div&gt;&lt;!----&gt;<br/>
+                        &lt;/div&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+                        &lt;div class="ui-datepicker-buttonbar ui-widget-header ng-tns-c91-19 ng-star-inserted" style=""&gt;<br/>
+                         &lt;div class="ui-g ng-tns-c91-19"&gt;<br/>
+                          &lt;div class="ui-g-6 ng-tns-c91-19"&gt;<br/>
+                           &lt;button type="button" tabindex="0" pbutton="" class="ng-tns-c91-19 ui-button-secondary ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"&gt;&lt;span class="ui-button-text ui-clickable"&gt;Hoy&lt;/span&gt;&lt;/button&gt;<br/>
+                          &lt;/div&gt;<br/>
+                          &lt;div class="ui-g-6 ng-tns-c91-19"&gt;<br/>
+                           &lt;button type="button" tabindex="0" pbutton="" class="ng-tns-c91-19 ui-button-secondary ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"&gt;&lt;span class="ui-button-text ui-clickable"&gt;Borrar&lt;/span&gt;&lt;/button&gt;<br/>
+                          &lt;/div&gt;<br/>
+                         &lt;/div&gt;<br/>
+                        &lt;/div&gt;&lt;!----&gt;<br/>
+                       &lt;/div&gt;&lt;!----&gt;&lt;/span&gt;<br/>
+                     &lt;/p-calendar&gt;<br/>
+                    &lt;/div&gt;<br/>
+                   &lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div _ngcontent-tdl-c130="" class="ui-g-4"&gt;<br/>
+                   &lt;div _ngcontent-tdl-c130="" class="ui-g-12 pb-0 ml-2"&gt;<br/>
+                    &lt;label _ngcontent-tdl-c130="" for="fcfinal" class="mb-0 mt-1 lbl"&gt; Fecha Final:&lt;/label&gt;&lt;i _ngcontent-tdl-c130="" class="fa fa-asterisk text-secondary font-size-10"&gt;&lt;/i&gt;<br/>
+                   &lt;/div&gt;<br/>
+                   &lt;div _ngcontent-tdl-c130="" class="ui-g-12 pt-0"&gt;<br/>
+                    &lt;div _ngcontent-tdl-c130="" class="inner-addon left-addon"&gt;<br/>
+                     &lt;p-calendar _ngcontent-tdl-c130="" name="fcfinal" inputid="fcfinal" showbuttonbar="true" yearrange="2000:2025" dateformat="yy-MM-dd" title="Fecha Final" class="ng-tns-c91-20 ng-untouched ng-pristine ng-valid"&gt;<br/>
+                      &lt;span class="ng-tns-c91-20 ui-calendar"&gt;&lt;input type="text" autocomplete="off" class="ng-tns-c91-20 calendar-app-sm ui-inputtext ui-widget ui-state-default ui-corner-all ng-star-inserted" readonly placeholder="" id="fcfinal" name="fcfinal" style=""&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;/span&gt;<br/>
+                     &lt;/p-calendar&gt;<br/>
+                    &lt;/div&gt;<br/>
+                   &lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div _ngcontent-tdl-c130="" class="ui-g-4"&gt;<br/>
+                   &lt;div _ngcontent-tdl-c130="" class="ui-g-12 pb-0 ml-2"&gt;<br/>
+                    &lt;label _ngcontent-tdl-c130="" for="cloteria" class="mb-0 mt-1 lbl"&gt;Lotería:&lt;/label&gt;&lt;i _ngcontent-tdl-c130="" class="fa fa-asterisk text-secondary font-size-10"&gt;&lt;/i&gt;<br/>
+                   &lt;/div&gt;<br/>
+                   &lt;div _ngcontent-tdl-c130="" class="ui-g-12 pt-0"&gt;<br/>
+                    &lt;div _ngcontent-tdl-c130="" class="inner-addon left-addon"&gt;<br/>
+                     &lt;p-dropdown _ngcontent-tdl-c130="" inputid="cloteria" name="cloteria" emptyfiltermessage="No hay loterias" title="Lotería" placeholder="Seleccione una Opción" class="ng-tns-c59-21 ng-untouched ng-pristine ng-valid"&gt;<br/>
+                      &lt;div class="ng-tns-c59-21 dropdown-app w-100 ui-dropdown ui-widget ui-state-default ui-corner-all ui-helper-clearfix"&gt;<br/>
+                       &lt;div class="ui-helper-hidden-accessible ng-tns-c59-21"&gt;<br/>
+                        &lt;input type="text" readonly aria-haspopup="listbox" class="ng-tns-c59-21" id="cloteria" aria-label=" "&gt;<br/>
+                       &lt;/div&gt;<br/>
+                       &lt;div class="ui-helper-hidden-accessible ui-dropdown-hidden-select ng-tns-c59-21"&gt;<br/>
+                        &lt;select tabindex="-1" aria-hidden="true" class="ng-tns-c59-21" name="cloteria"&gt;&lt;option value="" class="ng-tns-c59-21 ng-star-inserted" style=""&gt;Seleccione una Opción&lt;/option&gt;&lt;!----&gt;&lt;!----&gt;&lt;/select&gt;<br/>
+                       &lt;/div&gt;<br/>
+                       &lt;div class="ui-dropdown-label-container ng-tns-c59-21"&gt;<br/>
+                        &lt;!----&gt;&lt;label class="ng-tns-c59-21 ui-dropdown-label ui-inputtext ui-corner-all ui-placeholder ng-star-inserted" style=""&gt;Seleccione una Opción&lt;/label&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+                       &lt;/div&gt;<br/>
+                       &lt;div role="button" aria-haspopup="listbox" class="ui-dropdown-trigger ui-state-default ui-corner-right ng-tns-c59-21"&gt;<br/>
+                        &lt;span class="ui-dropdown-trigger-icon ui-clickable ng-tns-c59-21 pi pi-chevron-down"&gt;&lt;/span&gt;<br/>
+                       &lt;/div&gt;&lt;!----&gt;<br/>
+                      &lt;/div&gt;<br/>
+                     &lt;/p-dropdown&gt;<br/>
+                    &lt;/div&gt;<br/>
+                   &lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div _ngcontent-tdl-c130="" class="ui-g-4 pt-0"&gt;<br/>
+                   &lt;div _ngcontent-tdl-c130="" class="ui-g-12 pb-0 ml-2"&gt;<br/>
+                    &lt;label _ngcontent-tdl-c130="" for="isorteo" class="mb-0 mt-1 lbl"&gt;Número sorteo:&lt;/label&gt;&lt;i _ngcontent-tdl-c130="" class="fa fa-asterisk text-secondary font-size-10"&gt;&lt;/i&gt;<br/>
+                   &lt;/div&gt;<br/>
+                   &lt;div _ngcontent-tdl-c130="" class="ui-g-12 pt-0"&gt;<br/>
+                    &lt;div _ngcontent-tdl-c130="" class="inner-addon left-addon"&gt;<br/>
+                     &lt;input _ngcontent-tdl-c130="" type="text" placeholder="" inputid="isorteo" name="isorteo" title="Número de sorteo" pkeyfilter="pint" maxlength="6" class="input-app-sm w-100 ng-untouched ng-pristine ng-valid"&gt;<br/>
+                    &lt;/div&gt;<br/>
+                   &lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div _ngcontent-tdl-c130="" class="ui-g-4 pt-0"&gt;<br/>
+                   &lt;div _ngcontent-tdl-c130="" class="ui-g-12 pb-0 ml-2"&gt;<br/>
+                    &lt;label _ngcontent-tdl-c130="" for="incremental" class="mb-0 mt-1 steps-st"&gt;Número incremental del sorteo:&lt;/label&gt;&lt;i _ngcontent-tdl-c130="" class="fa fa-asterisk text-secondary font-size-10"&gt;&lt;/i&gt;<br/>
+                   &lt;/div&gt;<br/>
+                   &lt;div _ngcontent-tdl-c130="" class="ui-g-12 pt-0"&gt;<br/>
+                    &lt;div _ngcontent-tdl-c130="" class="inner-addon left-addon"&gt;<br/>
+                     &lt;input _ngcontent-tdl-c130="" type="number" inputid="incremental" name="incremental" title="Número incremental del sorteo" pkeyfilter="pint" maxlength="4" class="input-app-sm w-100 ng-untouched ng-pristine ng-valid"&gt;<br/>
+                    &lt;/div&gt;<br/>
+                   &lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/>
+                 &lt;/div&gt;<br/>
+                 &lt;div _ngcontent-tdl-c130="" class="text-center pt-1 pb-1 ng-tns-c92-18"&gt;<br/>
+                  &lt;button _ngcontent-tdl-c130="" type="button" title="Permite regresar a la lista de sorteos" class="button-global button-clean-filters mr-2"&gt;&lt;label _ngcontent-tdl-c130="" class="btn-size-admin"&gt;&lt;i _ngcontent-tdl-c130="" class="fa fa-times"&gt;&lt;/i&gt; Salir&nbsp;&nbsp;&lt;/label&gt;&lt;/button&gt;&lt;button _ngcontent-tdl-c130="" type="button" title="Permite ir al siguiente paso" class="button-global button-init-filters"&gt;&lt;label _ngcontent-tdl-c130="" class="color-13 px-4"&gt;Siguiente &lt;i _ngcontent-tdl-c130="" class="fa fa-hand-o-right"&gt;&lt;/i&gt;&lt;/label&gt;&lt;/button&gt;<br/>
+                 &lt;/div&gt;<br/>
+                &lt;/div&gt;&lt;!----&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+             &lt;/p-panel&gt;&lt;!----&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div role="tabpanel" class="mat-horizontal-stepper-content ng-trigger ng-trigger-stepTransition ng-tns-c82-17 ng-star-inserted" id="cdk-step-content-0-1" aria-labelledby="cdk-step-label-0-1" aria-expanded="false" style="transform: translate3d(100%, 0px, 0px); visibility: hidden;"&gt;<br/>
+             &lt;!----&gt;&lt;p-panel _ngcontent-tdl-c130="" styleclass="mb-2 steps-pnl pnl-pt" class="ng-tns-c92-22 ng-star-inserted" style=""&gt;<br/>
+              &lt;div class="ng-tns-c92-22 mb-2 steps-pnl pnl-pt ui-panel ui-widget ui-widget-content ui-corner-all" id="ui-panel-1"&gt;<br/>
+               &lt;div class="ng-tns-c92-22 ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all ng-star-inserted"&gt;<br/>
+                &lt;!----&gt;&lt;p-header _ngcontent-tdl-c130="" class="ng-tns-c92-22"&gt;<br/>
+                 &lt;span _ngcontent-tdl-c130="" class="steps-circle i"&gt;i&lt;/span&gt;<br/>
+                 &lt;span _ngcontent-tdl-c130="" class="sub-title"&gt; Seleccione qué día(s) juega la lotería o sorteo&lt;/span&gt;<br/>
+                &lt;/p-header&gt;&lt;!----&gt;<br/>
+               &lt;/div&gt;&lt;!----&gt;<br/>
+               &lt;div role="region" class="ui-panel-content-wrapper ng-tns-c92-22 ng-trigger ng-trigger-panelContent" id="ui-panel-1-content" aria-hidden="false" aria-labelledby="ui-panel-1-label" style="opacity: 1;"&gt;<br/>
+                &lt;div class="ui-panel-content ui-widget-content ng-tns-c92-22"&gt;<br/>
+                 &lt;p-panel _ngcontent-tdl-c130="" styleclass="steps-pnl pnl-pt m-2" class="ng-tns-c92-23 ng-tns-c92-22 ng-star-inserted" style=""&gt;<br/>
+                  &lt;div class="ng-tns-c92-23 steps-pnl pnl-pt m-2 ui-panel ui-widget ui-widget-content ui-corner-all" id="ui-panel-2"&gt;<br/>
+                   &lt;div class="ng-tns-c92-23 ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all ng-star-inserted"&gt;<br/>
+                    &lt;!----&gt;&lt;p-header _ngcontent-tdl-c130="" class="ng-tns-c92-23"&gt;<br/>
+                     &lt;i _ngcontent-tdl-c130="" class="fa fa-calendar sub-ic"&gt;&lt;/i&gt;<br/>
+                     &lt;span _ngcontent-tdl-c130="" class="sub-title"&gt; Días Hábiles&lt;/span&gt;<br/>
+                    &lt;/p-header&gt;&lt;!----&gt;<br/>
+                   &lt;/div&gt;&lt;!----&gt;<br/>
+                   &lt;div role="region" class="ui-panel-content-wrapper ng-tns-c92-23 ng-trigger ng-trigger-panelContent" id="ui-panel-2-content" aria-hidden="false" aria-labelledby="ui-panel-2-label" style="opacity: 1;"&gt;<br/>
+                    &lt;div class="ui-panel-content ui-widget-content ng-tns-c92-23"&gt;<br/>
+                     &lt;div _ngcontent-tdl-c130="" class="ui-g ng-tns-c92-23"&gt;<br/>
+                      &lt;!----&gt;&lt;!----&gt;<br/>
+                     &lt;/div&gt;<br/>
+                    &lt;/div&gt;&lt;!----&gt;<br/>
+                   &lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/>
+                 &lt;/p-panel&gt;&lt;!----&gt;<br/>
+                 &lt;div _ngcontent-tdl-c130="" class="text-center pt-1 pb-1 ng-tns-c92-22"&gt;<br/>
+                  &lt;button _ngcontent-tdl-c130="" matstepperprevious="" type="button" title="Permite regresar al paso anterior" class="button-global button-regresar mr-2"&gt;&lt;label _ngcontent-tdl-c130="" class="btn-label"&gt;&lt;i _ngcontent-tdl-c130="" class="fa fa-hand-o-left"&gt;&lt;/i&gt; Regresar&lt;/label&gt;&lt;/button&gt;&lt;button _ngcontent-tdl-c130="" type="button" title="Permite regresar a la lista de sorteos" class="button-global button-clean-filters mr-2"&gt;&lt;label _ngcontent-tdl-c130="" class="btn-size-admin"&gt;&lt;i _ngcontent-tdl-c130="" class="fa fa-times"&gt;&lt;/i&gt; Salir&lt;/label&gt;&lt;/button&gt;&lt;button _ngcontent-tdl-c130="" type="button" title="Permite ir al siguiente paso" class="button-global button-init-filters"&gt;&lt;label _ngcontent-tdl-c130="" class="color-13 px-4"&gt;Siguiente &lt;i _ngcontent-tdl-c130="" class="fa fa-hand-o-right"&gt;&lt;/i&gt;&lt;/label&gt;&lt;/button&gt;<br/>
+                 &lt;/div&gt;<br/>
+                &lt;/div&gt;&lt;!----&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+             &lt;/p-panel&gt;&lt;!----&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div role="tabpanel" class="mat-horizontal-stepper-content ng-trigger ng-trigger-stepTransition ng-tns-c82-17 ng-star-inserted" id="cdk-step-content-0-2" aria-labelledby="cdk-step-label-0-2" aria-expanded="false" style="transform: translate3d(100%, 0px, 0px); visibility: hidden;"&gt;<br/>
+             &lt;!----&gt;<br/>
+             &lt;div _ngcontent-tdl-c130="" class="pnl1 brd m-2 ng-star-inserted" style=""&gt;<br/>
+              &lt;div _ngcontent-tdl-c130="" class="ui-g"&gt;<br/>
+               &lt;div _ngcontent-tdl-c130="" class="ui-g-12 p-1 bg-clrg" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"&gt;<br/>
+                &lt;span _ngcontent-tdl-c130="" class="steps-circle"&gt;1&lt;/span&gt;&lt;span _ngcontent-tdl-c130="" class="sub-title"&gt; Información del sorteo&lt;/span&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div _ngcontent-tdl-c130="" class="ui-g-4 pt-2 pb-2"&gt;<br/>
+                &lt;div _ngcontent-tdl-c130="" class="ui-g-12 pb-0"&gt;<br/>
+                 &lt;span _ngcontent-tdl-c130="" class="steps-st mb-0 mt-1"&gt;Fecha Inicio:&lt;/span&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div _ngcontent-tdl-c130="" class="ui-g-12 pt-0"&gt;<br/>
+                 &lt;span _ngcontent-tdl-c130="" class="lbl"&gt;&lt;/span&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div _ngcontent-tdl-c130="" class="ui-g-4 pt-2 pb-2"&gt;<br/>
+                &lt;div _ngcontent-tdl-c130="" class="ui-g-12 pb-0"&gt;<br/>
+                 &lt;span _ngcontent-tdl-c130="" class="steps-st mb-0 mt-1"&gt;Fecha Final:&lt;/span&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div _ngcontent-tdl-c130="" class="ui-g-12 pt-0"&gt;<br/>
+                 &lt;span _ngcontent-tdl-c130="" class="lbl"&gt;&lt;/span&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div _ngcontent-tdl-c130="" class="ui-g-4 pt-2 pb-2"&gt;<br/>
+                &lt;div _ngcontent-tdl-c130="" class="ui-g-12 pb-0"&gt;<br/>
+                 &lt;span _ngcontent-tdl-c130="" class="steps-st mb-0 mt-1"&gt;Lotería:&lt;/span&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div _ngcontent-tdl-c130="" class="ui-g-12 pt-0"&gt;<br/>
+                 &lt;span _ngcontent-tdl-c130="" class="lbl"&gt;&lt;/span&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div _ngcontent-tdl-c130="" class="ui-g mt-2"&gt;<br/>
+               &lt;div _ngcontent-tdl-c130="" class="ui-g-12 p-1 bg-clrg"&gt;<br/>
+                &lt;span _ngcontent-tdl-c130="" class="steps-circle"&gt;2&lt;/span&gt;&lt;span _ngcontent-tdl-c130="" class="sub-title"&gt; Días seleccionados para el sorteo&lt;/span&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div _ngcontent-tdl-c130="" class="ui-g-12 p-0"&gt;<br/>
+                &lt;p-panel _ngcontent-tdl-c130="" styleclass="steps-pnl pnl-pt m-2" class="ng-tns-c92-24"&gt;<br/>
+                 &lt;div class="ng-tns-c92-24 steps-pnl pnl-pt m-2 ui-panel ui-widget ui-widget-content ui-corner-all" id="ui-panel-3"&gt;<br/>
+                  &lt;div class="ng-tns-c92-24 ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all ng-star-inserted"&gt;<br/>
+                   &lt;!----&gt;&lt;p-header _ngcontent-tdl-c130="" class="ng-tns-c92-24"&gt;<br/>
+                    &lt;i _ngcontent-tdl-c130="" class="fa fa-calendar sub-ic"&gt;&lt;/i&gt;<br/>
+                    &lt;span _ngcontent-tdl-c130="" class="sub-title"&gt; Días Hábiles&lt;/span&gt;<br/>
+                   &lt;/p-header&gt;&lt;!----&gt;<br/>
+                  &lt;/div&gt;&lt;!----&gt;<br/>
+                  &lt;div role="region" class="ui-panel-content-wrapper ng-tns-c92-24 ng-trigger ng-trigger-panelContent" id="ui-panel-3-content" aria-hidden="false" aria-labelledby="ui-panel-3-label" style="opacity: 1;"&gt;<br/>
+                   &lt;div class="ui-panel-content ui-widget-content ng-tns-c92-24"&gt;<br/>
+                    &lt;div _ngcontent-tdl-c130="" class="mr-2 ml-2 mt-2 mb-2 ui-messages ui-messages-info ui-corner-all p-1 ng-star-inserted" style=""&gt;<br/>
+                     &lt;span _ngcontent-tdl-c130="" class="ui-messages-icon pi pi-info-circle"&gt;&lt;/span&gt;&lt;span _ngcontent-tdl-c130="" class="ui-messages-detail font-size-15 mt-1"&gt; No hay día(s) hábiles seleccionados para el sorteo &lt;/span&gt;<br/>
+                    &lt;/div&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+                   &lt;/div&gt;&lt;!----&gt;<br/>
+                  &lt;/div&gt;<br/>
+                 &lt;/div&gt;<br/>
+                &lt;/p-panel&gt;<br/>
+               &lt;/div&gt;&lt;!----&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div _ngcontent-tdl-c130="" class="text-center pt-1 pb-1"&gt;<br/>
+               &lt;button _ngcontent-tdl-c130="" matstepperprevious="" type="button" title="Permite regresar al paso anterior" class="button-global button-regresar mr-2"&gt;&lt;label _ngcontent-tdl-c130="" class="btn-label"&gt;&lt;i _ngcontent-tdl-c130="" class="fa fa-hand-o-left"&gt;&lt;/i&gt; Regresar&lt;/label&gt;&lt;/button&gt;&lt;button _ngcontent-tdl-c130="" type="button" title="Permite regresar a la lista de sorteos" class="button-global button-clean-filters mr-2"&gt;&lt;label _ngcontent-tdl-c130="" class="btn-size-admin"&gt;&lt;i _ngcontent-tdl-c130="" class="fa fa-times"&gt;&lt;/i&gt; Salir&lt;/label&gt;&lt;/button&gt;&lt;button _ngcontent-tdl-c130="" type="button" title="Permite enviar la solicitud de creación de sorteos" class="button-global button-init-filters"&gt;&lt;label _ngcontent-tdl-c130="" class="color-13 px-4"&gt;Enviar Solicitud &lt;/label&gt;&lt;i _ngcontent-tdl-c130="" class="fa fa-plus-circle btn-icon pl-1"&gt;&lt;/i&gt;&lt;/button&gt;<br/>
+              &lt;/div&gt;<br/>
+             &lt;/div&gt;&lt;!----&gt;<br/>
+            &lt;/div&gt;&lt;!----&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/mat-horizontal-stepper&gt;<br/>
+         &lt;/div&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+        &lt;/ng-component&gt;&lt;!----&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/main&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/app-content&gt;<br/>
+    &lt;p-confirmdialog _ngcontent-tdl-c118="" id="confApp" icon="pi pi-exclamation-triangle" class="ng-tns-c115-2"&gt;<br/>
+     &lt;!----&gt;<br/>
+    &lt;/p-confirmdialog&gt;<br/>
+    &lt;p-toast _ngcontent-tdl-c118="" position="bottom-center" key="toast" class="ng-tns-c117-3"&gt;<br/>
+     &lt;div class="ng-tns-c117-3 ui-toast ui-widget ui-toast-bottom-center" style="margin-top: 80px;"&gt;<br/>
+      &lt;!----&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/p-toast&gt;<br/>
+    &lt;p-toast _ngcontent-tdl-c118="" id="toastExtraLong" position="bottom-center" key="toastExtraLong" class="ng-tns-c117-4"&gt;<br/>
+     &lt;div class="ng-tns-c117-4 ui-toast ui-widget ui-toast-bottom-center"&gt;<br/>
+      &lt;!----&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/p-toast&gt;<br/>
+    &lt;p-toast _ngcontent-tdl-c118="" id="toastLonger" position="bottom-center" key="toastLonger" class="ng-tns-c117-5"&gt;<br/>
+     &lt;div class="ng-tns-c117-5 ui-toast ui-widget ui-toast-bottom-center"&gt;<br/>
+      &lt;!----&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/p-toast&gt;<br/>
+    &lt;p-toast _ngcontent-tdl-c118="" id="toastMedium" position="bottom-center" key="toastMedium" class="ng-tns-c117-6"&gt;<br/>
+     &lt;div class="ng-tns-c117-6 ui-toast ui-widget ui-toast-bottom-center"&gt;<br/>
+      &lt;!----&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/p-toast&gt;&lt;!----&gt;<br/>
+   &lt;/ng-component&gt;&lt;!----&gt;<br/>
+  &lt;/app-root&gt; <br/>
+  &lt;script src="runtime-es2015.a073064cb0177982bffd.js" type="module"&gt;&lt;/script&gt;<br/>
+  &lt;script src="runtime-es5.a073064cb0177982bffd.js" nomodule="" defer&gt;&lt;/script&gt;<br/>
+  &lt;script src="polyfills-es5.5d458570e3cbacbe6858.js" nomodule="" defer&gt;&lt;/script&gt;<br/>
+  &lt;script src="polyfills-es2015.ec79f18e032b82f64dd8.js" type="module"&gt;&lt;/script&gt;<br/>
+  &lt;script src="main-es2015.882f9f49ad041d350551.js" type="module"&gt;&lt;/script&gt;<br/>
+  &lt;script src="main-es5.882f9f49ad041d350551.js" nomodule="" defer&gt;&lt;/script&gt; <br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="1" name="crear sorteo" skipped="0" tests="2" time="39.74" timestamp="2023-04-12 01:12:02"><testcase name="Validar la creacion correcta de un sorteo"><error message="Step [cree un sorteo] is defined with 0 parameters at 'co.com.konex.certification.login.backoffice.stepdefinitions.AdminSorteoStepdefinitions.creeUnSorteo()'.&#10;However, the gherkin step has 1 arguments:&#10; * Table:&#10;      | fechainicio   | fechafinal   | loteria   | numerosorteo   | numeroincrementaldelsorteo   |&#10;      | &lt;fechainicio&gt; | &lt;fechafinal&gt; | &lt;loteria&gt; | &lt;numerosorteo&gt; | &lt;numeroincrementaldelsorteo&gt; |&#10;&#10;Step text: cree un sorteo" type="io.cucumber.core.exception.CucumberException">Step [cree un sorteo] is defined with 0 parameters at 'co.com.konex.certification.login.backoffice.stepdefinitions.AdminSorteoStepdefinitions.creeUnSorteo()'.
+However, the gherkin step has 1 arguments:
+ * Table:
+      | fechainicio   | fechafinal   | loteria   | numerosorteo   | numeroincrementaldelsorteo   |
+      | &lt;fechainicio&gt; | &lt;fechafinal&gt; | &lt;loteria&gt; | &lt;numerosorteo&gt; | &lt;numeroincrementaldelsorteo&gt; |
+
+Step text: cree un sorteo</error><system-err>Step [cree un sorteo] is defined with 0 parameters at 'co.com.konex.certification.login.backoffice.stepdefinitions.AdminSorteoStepdefinitions.creeUnSorteo()'.
+However, the gherkin step has 1 arguments:
+ * Table:
+      | fechainicio   | fechafinal   | loteria   | numerosorteo   | numeroincrementaldelsorteo   |
+      | &lt;fechainicio&gt; | &lt;fechafinal&gt; | &lt;loteria&gt; | &lt;numerosorteo&gt; | &lt;numeroincrementaldelsorteo&gt; |
+
+Step text: cree un sorteo&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:57)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:95)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)&#13;
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase></testsuite>

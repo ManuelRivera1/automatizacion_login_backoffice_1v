@@ -1,7 +1,7 @@
 package co.com.konex.cetificacion.login.backoffice.tasks;
 
 import co.com.konex.cetificacion.login.backoffice.model.TablaUsuarios;
-import co.com.konex.cetificacion.login.backoffice.userinterfaces.ContenedorDeObjetos;
+import co.com.konex.cetificacion.login.backoffice.userinterfaces.ContenedorDeObjetosLogin;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
@@ -21,9 +21,9 @@ public class Digitar implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Enter.theValue(tablaUsuarios.getUsuario()).into(ContenedorDeObjetos.USER),
-                Enter.theValue(tablaUsuarios.getContrasenna()).into(ContenedorDeObjetos.PASSWORD),
-                Click.on(ContenedorDeObjetos.BTN_SING_IN));
+        actor.attemptsTo(Enter.theValue(tablaUsuarios.getUsuario()).into(ContenedorDeObjetosLogin.USER),
+                Enter.theValue(tablaUsuarios.getContrasenna()).into(ContenedorDeObjetosLogin.PASSWORD),
+                Click.on(ContenedorDeObjetosLogin.BTN_SING_IN));
 
     }
 }

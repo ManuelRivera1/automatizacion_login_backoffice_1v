@@ -32,8 +32,8 @@ public class MyStepdefinitions {
     }
 
     //Caso 1
-    @Given("que el usario ingresa al Backoffice")
-    public void queElUsarioIngresaAlBackoffice() {
+    @Given("que el usuario ingresa al Backoffice")
+    public void queElUsuarioIngresaAlBackoffice() {
         OnStage.theActorCalled("Usuario").wasAbleTo(Abrir.laPagina());
     }
 
@@ -49,15 +49,6 @@ public class MyStepdefinitions {
     }
 
     //caso2
-    @Given("^que el usuario ingresa al Backoffice$")
-    public void queElUsuarioIngresaAlBackoffice() {
-        OnStage.theActorCalled("Usuario").wasAbleTo(Abrir.laPagina());
-    }
-
-    @When("^digita usuario y contrasenna$")
-    public void digitaUsuarioYContrasenna(List<TablaUsuarios> tablaUsuarios) {
-        OnStage.theActorInTheSpotlight().attemptsTo(Ingresar.credenciales(tablaUsuarios.get(0)));
-    }
 
     @Then("^verifica que ingreso correctamente$")
     public void verificaQueIngresoCorrectamente() {
@@ -66,10 +57,6 @@ public class MyStepdefinitions {
     }
 
     //Caso3
-    @Given("^que el usuario ingrese al Backoffice$")
-    public void queElUsuarioIngreseAlBackoffice() {
-            OnStage.theActorCalled("Usuario").wasAbleTo(Abrir.laPagina());
-    }
 
     @When("^digita usuario o contrasenna incorrectas$")
     public void digitaUsuarioOContrasennaIncorrectas(List<TablaUsuarios> tablaUsuarios) {

@@ -1,5 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"verificar el login con diferentes usuarios","Verificar el ingreso corrrecto con un usuario","SUCCESS","2023-04-12T08:33:00.065-05:00[America/Bogota]","0.0","18.16"
-"verificar el login con diferentes usuarios","Verificar el ingreso correcto con diferentes usuarios","SUCCESS","2023-04-12T08:33:18.299-05:00[America/Bogota]","0.0","36.12"
-"verificar el login con diferentes usuarios","Verificar el ingreso con credenciales incorrectas","SUCCESS","2023-04-12T08:33:54.429-05:00[America/Bogota]","0.0","38.45"
+"Administracion de loterias","Creacion de loteria","SUCCESS","2023-04-13T09:43:18.857-05:00[America/Bogota]","0.0","22.86"
+"verificar el login con diferentes usuarios","Verificar el ingreso corrrecto con un usuario","SUCCESS","2023-04-12T12:45:08.081-05:00[America/Bogota]","0.0","18.79"
+"verificar el login con diferentes usuarios","Verificar el ingreso correcto con diferentes usuarios","SUCCESS","2023-04-12T12:45:26.893-05:00[America/Bogota]","0.0","41.16"
 "verificar el login con diferentes usuarios","Verificar el ingreso correcto con diferentes usuarios","SUCCESS","2023-04-11T16:32:31.173-05:00[America/Bogota]","0.0","46.72"

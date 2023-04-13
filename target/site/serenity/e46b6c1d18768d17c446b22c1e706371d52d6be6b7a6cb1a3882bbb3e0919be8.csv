@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"verificar el login con diferentes usuarios","Verificar el ingreso correcto con diferentes usuarios","SUCCESS","2023-04-11T18:00:00.88-05:00[America/Bogota]","0.0","75.98"
+"Administracion de sorteos","Validar la creacion correcta de un sorteo","FAILURE","2023-04-13T15:22:20.998-05:00[America/Bogota]","0.0","44.16"

@@ -8,7 +8,7 @@
 
   @Caso1
    Scenario Outline: Verificar el ingreso corrrecto con un usuario
-    Given que el usario ingresa al Backoffice
+    Given que el usuario ingresa al Backoffice
     When digita usuario y contrasenna del usuario
       | usuario   | contrasenna   |
       | <usuario> | <contrasenna> |
@@ -21,7 +21,7 @@
     @Caso2
   Scenario Outline: Verificar el ingreso correcto con diferentes usuarios
     Given que el usuario ingresa al Backoffice
-    When digita usuario y contrasenna
+    When digita usuario y contrasenna del usuario
       | usuario   | contrasenna   |
       | <usuario> | <contrasenna> |
     Then verifica que ingreso correctamente
@@ -35,7 +35,7 @@
 
 @Caso3
   Scenario Outline: Verificar el ingreso con credenciales incorrectas
-  Given que el usuario ingrese al Backoffice
+  Given que el usuario ingresa al Backoffice
   When digita usuario o contrasenna incorrectas
     | usuario   | contrasenna   |
     | <usuario> | <contrasenna> |
