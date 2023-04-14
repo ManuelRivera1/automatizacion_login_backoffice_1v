@@ -2,6 +2,7 @@ package co.com.konex.certification.login.backoffice.stepdefinitions;
 
 import co.com.konex.cetificacion.login.backoffice.model.TablaCrearSorteo;
 import co.com.konex.cetificacion.login.backoffice.model.TablaUsuarios;
+import co.com.konex.cetificacion.login.backoffice.questions.Revisar;
 import co.com.konex.cetificacion.login.backoffice.tasks.*;
 import io.cucumber.java.Before;
 import io.cucumber.java.DataTableType;
@@ -9,8 +10,10 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import org.hamcrest.Matchers;
 
 import java.util.List;
 import java.util.Map;
@@ -19,7 +22,7 @@ public class AdminSorteoStepdefinitions {
 
     @DataTableType
     public TablaCrearSorteo tablaCrearSorteoEntry (Map<String, String> entry) {
-        return new TablaCrearSorteo(entry.get("numerosorteo"),entry.get("numeroincrementaldelsorteo"),entry.get("horasorteo"));
+        return new TablaCrearSorteo(entry.get("numerosorteo"),entry.get("numeroincrementaldelsorteo"),entry.get("horasorteo"), entry.get("msjsolicitud"));
     }
     @Before
     public void iniciarEscenario(){
@@ -49,6 +52,7 @@ public class AdminSorteoStepdefinitions {
 
     @Then("validara que el sorteo se haya creado")
     public void validaraQueElSorteoSeHayaCreado() {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Revisar.mensajeExitoso(), Matchers.equalTo("La solicitud de autorización para la creación de sorteos ha sido enviada con éxito")));
     }
 
 

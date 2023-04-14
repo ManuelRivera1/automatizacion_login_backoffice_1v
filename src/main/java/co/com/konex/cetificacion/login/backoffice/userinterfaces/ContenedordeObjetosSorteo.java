@@ -28,4 +28,7 @@ public class ContenedordeObjetosSorteo {
     public static final Target HORA_SORTEO = Target.the("hora sorteo").located(By.xpath("//input[@class='input-app-sm ml-2']"));
     public static final Target BTN_SGTE_STEP_DOS = Target.the("boton siguiente step dos de crear sorteo").locatedBy("(//label[contains(text(),'Siguiente')])[2]");
     public static final Target BTN_ENV_SOLICITUD = Target.the("Boton enviar solicitud").locatedBy("//label[contains(text(),'Enviar Solicitud')]");
+    public static final Target MSJ_SOLICITUD = Target.the("Mensaje para solicitar aceptacion del sorteo").locatedBy("//textarea[@id='inmotivoCre']");
+    public static final Target BTN_SOLICITAR = Target.the("boton para solicitar creación del sorteo").locatedBy("//em[@class='fa fa-plus color-13 font-size-15 pl-2']");
+    public static final Target MENSAJE_EXITO = Target.the("mensaje de solicitud enviada exitosamente").locatedBy("//div[contains(text(),'La solicitud de autorización para la creación de sorteos ha sido enviada con éxito')]");
 }

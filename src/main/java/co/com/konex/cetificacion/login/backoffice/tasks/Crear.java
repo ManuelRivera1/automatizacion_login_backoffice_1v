@@ -41,6 +41,8 @@ public class Crear implements Task {
                 Enter.theValue(tablaCrearSorteo.getHorasorteo()).into(ContenedordeObjetosSorteo.HORA_SORTEO),
                 Scroll.to(ContenedordeObjetosSorteo.BTN_SGTE_STEP_DOS),
                 Click.on(ContenedordeObjetosSorteo.BTN_SGTE_STEP_DOS),
-                Click.on(ContenedordeObjetosSorteo.BTN_ENV_SOLICITUD));
+                Click.on(ContenedordeObjetosSorteo.BTN_ENV_SOLICITUD),
+                Enter.theValue(tablaCrearSorteo.getMsjsolicitud()).into(ContenedordeObjetosSorteo.MSJ_SOLICITUD),
+                Click.on(ContenedordeObjetosSorteo.BTN_SOLICITAR));
     }
 }

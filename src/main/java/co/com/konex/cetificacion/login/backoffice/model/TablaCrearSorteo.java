@@ -7,11 +7,26 @@ public class TablaCrearSorteo {
 
     private String horasorteo;
 
-    public TablaCrearSorteo(String numerosorteo, String numeroincrementaldelsorteo,String horasorteo) {
+    private String msjsolicitud;
+
+    public String getMsjsolicitud() {
+        return msjsolicitud;
+    }
+
+    public TablaCrearSorteo(String numerosorteo, String numeroincrementaldelsorteo,String horasorteo, String msjsolicitud) {
         this.numerosorteo = numerosorteo;
         this.numeroincrementaldelsorteo = numeroincrementaldelsorteo;
         this.horasorteo = horasorteo;
+        this.msjsolicitud = msjsolicitud;
     }
+
+    public void setMsjsolicitud(String msjsolicitud) {
+        this.msjsolicitud = msjsolicitud;
+    }
+
+
+
+
     public String getHorasorteo() {
         return horasorteo;
     }

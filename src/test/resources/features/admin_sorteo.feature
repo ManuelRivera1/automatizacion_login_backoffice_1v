@@ -14,6 +14,6 @@
         | 10974074491| JGIRALDO10|
       And ingrese al modulo Escrutinio y submodulo sorteo
       And cree un sorteo
-        | numerosorteo | numeroincrementaldelsorteo | horasorteo |
-        | 001          | 1                          | 100000p    |
+        | numerosorteo | numeroincrementaldelsorteo | horasorteo | msjsolicitud          |
+        | 001          | 1                          | 100000p    | prueba automatización |
       Then validara que el sorteo se haya creado

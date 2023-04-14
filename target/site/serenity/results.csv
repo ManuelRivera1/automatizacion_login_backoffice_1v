@@ -1,6 +1,6 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Administracion de loterias","Creacion de loteria","SUCCESS","2023-04-13T17:28:38.082-05:00[America/Bogota]","0.0","24.52"
-"Administracion de sorteos","Validar la creacion correcta de un sorteo","SUCCESS","2023-04-13T17:23:37.234-05:00[America/Bogota]","0.0","29.83"
+"Administracion de loterias","Creacion de loteria","SUCCESS","2023-04-14T09:19:47.756-05:00[America/Bogota]","0.0","42.78"
+"Administracion de sorteos","Validar la creacion correcta de un sorteo","SUCCESS","2023-04-14T09:44:49.674-05:00[America/Bogota]","0.0","34.03"
 "crear sorteo","Validar la creacion correcta de un sorteo","ERROR","2023-04-12T13:12:02.401-05:00[America/Bogota]","0.0","39.74"
 "verificar el login con diferentes usuarios","Verificar el ingreso corrrecto con un usuario","SUCCESS","2023-04-12T12:45:08.081-05:00[America/Bogota]","0.0","18.79"
 "verificar el login con diferentes usuarios","Verificar el ingreso correcto con diferentes usuarios","SUCCESS","2023-04-12T12:45:26.893-05:00[America/Bogota]","0.0","41.16"
