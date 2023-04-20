@@ -1,50 +1,50 @@
 #Autor:johana.giraldo@konexinnovation.com.co
+  #language: es
 
-  @HULOGIN
-  Feature: verificar el login con diferentes usuarios
-    Yo como usuario
-  Quiero ingresar a la pagina color
+@HULOGIN
+Característica: verificar el login con diferentes usuarios
+  Yo como usuario
+  Quiero ingresar a la pagina backoffice
   Para verificar el inicio de sesion con diferentes usuarios
 
   @Caso1
-   Scenario Outline: Verificar el ingreso corrrecto con un usuario
-    Given que el usuario ingresa al Backoffice
-    When digita usuario y contrasenna del usuario
+  Esquema del escenario: Verificar el ingreso correcto con uno o diferentes usuarios
+    Dado que el usuario ingresa al Backoffice
+    Cuando digita usuario y contrasenna del usuario
       | usuario   | contrasenna   |
       | <usuario> | <contrasenna> |
-    Then verifica el ingreso correcto
+    Y selecciona empresa
+      | empresa   |
+      | <empresa> |
+    Entonces verifica que ingreso correctamente
 
-    Examples:
-      | usuario     | contrasenna |
-      | 10974074491 | JGIRALDO10  |
+    Ejemplos:
+      | usuario     | contrasenna   | empresa                        |
+      | 10974074491 | JGIRALDO10    | 11601 - GO                     |
+      | 10101013    | CDATACENTER10 | 11601 - GO                     |
+      | 123456      | 1234567       | 3227077412 - Operador Nacional |
 
-    @Caso2
-  Scenario Outline: Verificar el ingreso correcto con diferentes usuarios
-    Given que el usuario ingresa al Backoffice
-    When digita usuario y contrasenna del usuario
+
+  @Caso2
+  Esquema del escenario:Verificar el ingreso de un usuario de manera erronea
+    Dado que el usuario ingresa al Backoffice
+    Cuando digita usuario y contrasenna del usuario
       | usuario   | contrasenna   |
       | <usuario> | <contrasenna> |
-    Then verifica que ingreso correctamente
+    Entonces verifica el mensaje de error
+      | mensajeError   |
+      | <mensajeError> |
 
-    Examples:
-      | usuario     | contrasenna   |
-      | 10974074491 | JGIRALDO10    |
-      | 10101012    | ADATACENTER10 |
-      | 10101013    | CDATACENTER10 |
+    Ejemplos:
+      | Descripcion                        | usuario     | contrasenna   | mensajeError                                  |
+      | Usuario incorrecto                 | 10974074491 | ADATACENTER10 | Credenciales incorrectas. Inténtalo de nuevo. |
+      | contrasenna incorrecta             | 10101022    | CLAVE         | Credenciales incorrectas. Inténtalo de nuevo. |
+      | contrasenna y usuarios incorrectos | USER        | CLAVEERRADA   | Credenciales incorrectas. Inténtalo de nuevo. |
+      | rol inactivo            | 10101024   | PROL10        | El usuario no tiene un rol activo en el sistema.          |
+      | usuario inactivo        | 10101014   | ADATACENTER10 | El usuario no se encuentra activo en el sistema.          |
+      | cajero sin programación | 1097407449 | PCAJA10       | No tiene programación de horario para la hora especifica. |
 
 
-@Caso3
-  Scenario Outline: Verificar el ingreso con credenciales incorrectas
-  Given que el usuario ingresa al Backoffice
-  When digita usuario o contrasenna incorrectas
-    | usuario   | contrasenna   |
-    | <usuario> | <contrasenna> |
-  Then verifica el mensaje de error
 
-  Examples:
-    | usuario     | contrasenna   |
-    | 10974074491 | ADATACENTER10 |
-    | 10101022    | CLAVE         |
-    | USER        | CLAVEERRADA   |
 
-  
+
