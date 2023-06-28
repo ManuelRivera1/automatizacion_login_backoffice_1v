@@ -36,13 +36,13 @@ Característica: verificar el login con diferentes usuarios
       | <mensajeError> |
 
     Ejemplos:
-      | Descripcion                        | usuario     | contrasenna   | mensajeError                                  |
-      | Usuario incorrecto                 | 10974074491 | ADATACENTER10 | Credenciales incorrectas. Inténtalo de nuevo. |
-      | contrasenna incorrecta             | 10101022    | CLAVE         | Credenciales incorrectas. Inténtalo de nuevo. |
-      | contrasenna y usuarios incorrectos | USER        | CLAVEERRADA   | Credenciales incorrectas. Inténtalo de nuevo. |
-      | rol inactivo            | 10101024   | PROL10        | El usuario no tiene un rol activo en el sistema.          |
-      | usuario inactivo        | 10101014   | ADATACENTER10 | El usuario no se encuentra activo en el sistema.          |
-      | cajero sin programación | 1097407449 | PCAJA10       | No tiene programación de horario para la hora especifica. |
+      | Descripcion                       | usuario     | contrasenna   | mensajeError                                              |
+      | Usuario incorrecto                | 10974074491 | ADATACENTER10 | Credenciales incorrectas. Inténtalo de nuevo.             |
+      | contraseña incorrecta             | 10101022    | CLAVE         | Credenciales incorrectas. Inténtalo de nuevo.             |
+      | contraseña y usuarios incorrectos | USER        | CLAVEERRADA   | Credenciales incorrectas. Inténtalo de nuevo.             |
+      | rol inactivo                      | 10101024    | PROL10        | El usuario no tiene un rol activo en el sistema.          |
+      | usuario inactivo                  | 10101014    | ADATACENTER10 | El usuario no se encuentra activo en el sistema.          |
+      | cajero sin programación           | 1097407449  | PCAJA10       | No tiene programación de horario para la hora especifica. |
 
 
 
