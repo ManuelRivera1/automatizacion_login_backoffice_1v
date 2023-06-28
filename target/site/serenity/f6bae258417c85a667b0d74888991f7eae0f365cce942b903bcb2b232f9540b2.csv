@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"verificar el login con diferentes usuarios","Verificar el ingreso con credenciales incorrectas","SUCCESS","2023-04-12T12:46:08.075-05:00[America/Bogota]","0.0","28.7"
+"verificar el login con diferentes usuarios","Verificar el ingreso con rol o usuario inactivo","SUCCESS","2023-04-20T11:30:01.442-05:00[America/Bogota]","0.0","24.16"
